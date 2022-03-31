@@ -310,7 +310,7 @@ elif [[ $MACHINE_ID = jet.* ]]; then
   ACCNR=${ACCNR:-h-nems}
   PARTITION=xjet
   DISKNM=/lfs4/BMC/wrfruc/RT
-  dprefix=${dprefix:-/lfs4/HFIP/$ACCNR/$USER}
+  dprefix=${dprefix:-/mnt/lfs1/BMC/wrfruc/smirnova}
   STMP=${STMP:-$dprefix/RT_BASELINE}
   PTMP=${PTMP:-$dprefix/RT_RUNDIRS}
 
