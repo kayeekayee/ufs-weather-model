@@ -1,24 +1,24 @@
-Tue Apr 19 17:10:52 UTC 2022
+Wed May 18 17:02:44 UTC 2022
 Start Regression test
 
-Compile 001 elapsed time 731 seconds. -DAPP=S2SW -DCCPP_SUITES=FV3_GFS_v16_coupled_nsstNoahmpUGWPv1,FV3_GFS_v16_coupled_p7_rrtmgp,FV3_GFS_v16_coupled_p8 -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
-Compile 002 elapsed time 951 seconds. -DAPP=S2S -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_v16_coupled_p8 -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
-Compile 003 elapsed time 830 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v15_thompson_mynn,FV3_GFS_v15_thompson_mynn_RRTMGP,FV3_GFS_v16_p7_rrtmgp,FV3_GFS_v16_p8 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 004 elapsed time 1095 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_RAP,FV3_RAP_sfcdiff,FV3_HRRR,FV3_RRFS_v1beta -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 005 elapsed time 928 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_thompson,FV3_GFS_v16_noahmp -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 006 elapsed time 1438 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_fv3wam -D32BIT=ON -DMULTI_GASES=ON -DREPRO=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Bitforbit
-Compile 007 elapsed time 213 seconds. -DAPP=ATM -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_noahmp,FV3_GFS_v16_thompson,FV3_GFS_v15_thompson_mynn,FV3_GFS_v16_p8 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
-Compile 008 elapsed time 1098 seconds. -DAPP=ATM -DDEBUG=ON -DCCPP_SUITES=FV3_RAP,FV3_RAP_cires_ugwp,FV3_RAP_unified_ugwp,FV3_RAP_noah,FV3_RAP_RRTMGP,FV3_RAP_sfcdiff,FV3_RAP_flake,FV3_RAP_noah_sfcdiff_cires_ugwp,FV3_RRFS_v1beta -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
-Compile 009 elapsed time 481 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_fv3wam -D32BIT=ON -DMULTI_GASES=ON -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
-Compile 010 elapsed time 828 seconds. -DAPP=HAFSW -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst,FV3_HAFS_v0_thompson_tedmf_gfdlsf -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 011 elapsed time 439 seconds. -DAPP=HAFS-ALL -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 012 elapsed time 904 seconds. -DAPP=NG-GODAS -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
-Compile 013 elapsed time 228 seconds. -DAPP=NG-GODAS -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
-Compile 014 elapsed time 398 seconds. -DAPP=ATMW -DCCPP_SUITES=FV3_GFS_v16 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 015 elapsed time 400 seconds. -DAPP=ATMAERO -DCCPP_SUITES=FV3_GFS_v16 -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 001 elapsed time 1074 seconds. -DAPP=S2SW -DCCPP_SUITES=FV3_GFS_v16_coupled_nsstNoahmpUGWPv1,FV3_GFS_v16_coupled_p7_rrtmgp,FV3_GFS_v16_coupled_p8 -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
+Compile 002 elapsed time 1767 seconds. -DAPP=S2S -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_v16_coupled_p8 -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
+Compile 003 elapsed time 576 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v15_thompson_mynn,FV3_GFS_v15_thompson_mynn_RRTMGP,FV3_GFS_v16_p7_rrtmgp,FV3_GFS_v16_p8 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 004 elapsed time 1434 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_RAP,FV3_RAP_sfcdiff,FV3_HRRR,FV3_RRFS_v1beta -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 005 elapsed time 1125 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_thompson,FV3_GFS_v16_noahmp -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 006 elapsed time 742 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_fv3wam -D32BIT=ON -DMULTI_GASES=ON -DREPRO=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Bitforbit
+Compile 007 elapsed time 345 seconds. -DAPP=ATM -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_noahmp,FV3_GFS_v16_thompson,FV3_GFS_v15_thompson_mynn,FV3_GFS_v16_p8 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
+Compile 008 elapsed time 1040 seconds. -DAPP=ATM -DDEBUG=ON -DCCPP_SUITES=FV3_RAP,FV3_RAP_cires_ugwp,FV3_RAP_unified_ugwp,FV3_RAP_noah,FV3_RAP_RRTMGP,FV3_RAP_sfcdiff,FV3_RAP_flake,FV3_RAP_noah_sfcdiff_cires_ugwp,FV3_RRFS_v1beta -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
+Compile 009 elapsed time 1213 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_fv3wam -D32BIT=ON -DMULTI_GASES=ON -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
+Compile 010 elapsed time 762 seconds. -DAPP=HAFSW -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst,FV3_HAFS_v0_thompson_tedmf_gfdlsf -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 011 elapsed time 615 seconds. -DAPP=HAFS-ALL -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 012 elapsed time 520 seconds. -DAPP=NG-GODAS -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
+Compile 013 elapsed time 584 seconds. -DAPP=NG-GODAS -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
+Compile 014 elapsed time 616 seconds. -DAPP=ATMW -DCCPP_SUITES=FV3_GFS_v16 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 015 elapsed time 1794 seconds. -DAPP=ATMAERO -DCCPP_SUITES=FV3_GFS_v16 -DMPI=ON -DCMAKE_BUILD_TYPE=Release
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/cpld_control_p8
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/cpld_control_p8
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/cpld_control_p8
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/cpld_control_p8
 Checking test 001 cpld_control_p8 results ....
 Moving baseline 001 cpld_control_p8 files ....
  Moving sfcf021.tile1.nc .........OK
@@ -84,14 +84,14 @@ Moving baseline 001 cpld_control_p8 files ....
  Moving 20210323.060000.out_pnt.points .........OK
  Moving 20210323.060000.restart.glo_1deg .........OK
 
-  0: The total amount of wall time                        = 215.056126
-  0: The maximum resident set size (KB)                   = 564136
+  0: The total amount of wall time                        = 211.978439
+  0: The maximum resident set size (KB)                   = 558792
 
 Test 001 cpld_control_p8 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/cpld_control_p7_rrtmgp
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/cpld_control_p7_rrtmgp
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/cpld_control_p7_rrtmgp
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/cpld_control_p7_rrtmgp
 Checking test 002 cpld_control_p7_rrtmgp results ....
 Moving baseline 002 cpld_control_p7_rrtmgp files ....
  Moving sfcf024.tile1.nc .........OK
@@ -145,14 +145,14 @@ Moving baseline 002 cpld_control_p7_rrtmgp files ....
  Moving 20210323.060000.out_pnt.points .........OK
  Moving 20210323.060000.restart.glo_1deg .........OK
 
-  0: The total amount of wall time                        = 254.233061
-  0: The maximum resident set size (KB)                   = 665676
+  0: The total amount of wall time                        = 250.044881
+  0: The maximum resident set size (KB)                   = 661204
 
 Test 002 cpld_control_p7_rrtmgp PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/cpld_bmark_p7
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/cpld_bmark_p7
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/cpld_bmark_p7
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/cpld_bmark_p7
 Checking test 003 cpld_bmark_p7 results ....
 Moving baseline 003 cpld_bmark_p7 files ....
  Moving sfcf006.nc .........OK
@@ -198,14 +198,14 @@ Moving baseline 003 cpld_bmark_p7 files ....
  Moving RESTART/iced.2013-04-01-21600.nc .........OK
  Moving RESTART/ufs.cpld.cpl.r.2013-04-01-21600.nc .........OK
 
-  0: The total amount of wall time                        = 839.072389
-  0: The maximum resident set size (KB)                   = 1234472
+  0: The total amount of wall time                        = 846.671499
+  0: The maximum resident set size (KB)                   = 1229664
 
 Test 003 cpld_bmark_p7 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/cpld_bmark_p8
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/cpld_bmark_p8
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/cpld_bmark_p8
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/cpld_bmark_p8
 Checking test 004 cpld_bmark_p8 results ....
 Moving baseline 004 cpld_bmark_p8 files ....
  Moving sfcf006.nc .........OK
@@ -251,14 +251,14 @@ Moving baseline 004 cpld_bmark_p8 files ....
  Moving RESTART/iced.2013-04-01-21600.nc .........OK
  Moving RESTART/ufs.cpld.cpl.r.2013-04-01-21600.nc .........OK
 
-  0: The total amount of wall time                        = 846.018065
-  0: The maximum resident set size (KB)                   = 1233212
+  0: The total amount of wall time                        = 839.208929
+  0: The maximum resident set size (KB)                   = 1234732
 
 Test 004 cpld_bmark_p8 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/cpld_control_c96_p8
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/cpld_control_c96_p8
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/cpld_control_c96_p8
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/cpld_control_c96_p8
 Checking test 005 cpld_control_c96_p8 results ....
 Moving baseline 005 cpld_control_c96_p8 files ....
  Moving sfcf021.tile1.nc .........OK
@@ -321,14 +321,14 @@ Moving baseline 005 cpld_control_c96_p8 files ....
  Moving RESTART/iced.2021-03-23-21600.nc .........OK
  Moving RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
 
-  0: The total amount of wall time                        = 207.093889
-  0: The maximum resident set size (KB)                   = 557832
+  0: The total amount of wall time                        = 206.817342
+  0: The maximum resident set size (KB)                   = 554840
 
 Test 005 cpld_control_c96_p8 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/cpld_control_c192_p8
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/cpld_control_c192_p8
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/cpld_control_c192_p8
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/cpld_control_c192_p8
 Checking test 006 cpld_control_c192_p8 results ....
 Moving baseline 006 cpld_control_c192_p8 files ....
  Moving sfcf036.tile1.nc .........OK
@@ -379,14 +379,14 @@ Moving baseline 006 cpld_control_c192_p8 files ....
  Moving RESTART/iced.2021-03-23-64800.nc .........OK
  Moving RESTART/ufs.cpld.cpl.r.2021-03-23-64800.nc .........OK
 
-  0: The total amount of wall time                        = 841.261461
-  0: The maximum resident set size (KB)                   = 731640
+  0: The total amount of wall time                        = 837.893832
+  0: The maximum resident set size (KB)                   = 731808
 
 Test 006 cpld_control_c192_p8 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/cpld_control_c384_p8
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/cpld_control_c384_p8
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/cpld_control_c384_p8
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/cpld_control_c384_p8
 Checking test 007 cpld_control_c384_p8 results ....
 Moving baseline 007 cpld_control_c384_p8 files ....
  Moving sfcf006.nc .........OK
@@ -430,14 +430,14 @@ Moving baseline 007 cpld_control_c384_p8 files ....
  Moving RESTART/iced.2021-03-22-43200.nc .........OK
  Moving RESTART/ufs.cpld.cpl.r.2021-03-22-43200.nc .........OK
 
-  0: The total amount of wall time                        = 969.529155
-  0: The maximum resident set size (KB)                   = 1255852
+  0: The total amount of wall time                        = 969.969127
+  0: The maximum resident set size (KB)                   = 1251140
 
 Test 007 cpld_control_c384_p8 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/cpld_debug_p8
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/cpld_debug_p8
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/cpld_debug_p8
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/cpld_debug_p8
 Checking test 008 cpld_debug_p8 results ....
 Moving baseline 008 cpld_debug_p8 files ....
  Moving sfcf006.tile1.nc .........OK
@@ -488,14 +488,14 @@ Moving baseline 008 cpld_debug_p8 files ....
  Moving RESTART/iced.2021-03-22-43200.nc .........OK
  Moving RESTART/ufs.cpld.cpl.r.2021-03-22-43200.nc .........OK
 
-  0: The total amount of wall time                        = 602.842628
-  0: The maximum resident set size (KB)                   = 619540
+  0: The total amount of wall time                        = 612.484705
+  0: The maximum resident set size (KB)                   = 614560
 
 Test 008 cpld_debug_p8 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control
 Checking test 009 control results ....
 Moving baseline 009 control files ....
  Moving sfcf000.nc .........OK
@@ -543,14 +543,14 @@ Moving baseline 009 control files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 124.757791
-  0: The maximum resident set size (KB)                   = 465420
+  0: The total amount of wall time                        = 123.386742
+  0: The maximum resident set size (KB)                   = 464372
 
 Test 009 control PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_CubedSphereGrid
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_CubedSphereGrid
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_CubedSphereGrid
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_CubedSphereGrid
 Checking test 010 control_CubedSphereGrid results ....
 Moving baseline 010 control_CubedSphereGrid files ....
  Moving sfcf000.tile1.nc .........OK
@@ -578,14 +578,14 @@ Moving baseline 010 control_CubedSphereGrid files ....
  Moving atmf024.tile5.nc .........OK
  Moving atmf024.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 119.451574
-  0: The maximum resident set size (KB)                   = 461512
+  0: The total amount of wall time                        = 121.009722
+  0: The maximum resident set size (KB)                   = 463220
 
 Test 010 control_CubedSphereGrid PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_latlon
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_latlon
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_latlon
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_latlon
 Checking test 011 control_latlon results ....
 Moving baseline 011 control_latlon files ....
  Moving sfcf000.nc .........OK
@@ -597,14 +597,14 @@ Moving baseline 011 control_latlon files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 121.886234
-  0: The maximum resident set size (KB)                   = 462176
+  0: The total amount of wall time                        = 123.865789
+  0: The maximum resident set size (KB)                   = 466720
 
 Test 011 control_latlon PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_wrtGauss_netcdf_parallel
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_wrtGauss_netcdf_parallel
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_wrtGauss_netcdf_parallel
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_wrtGauss_netcdf_parallel
 Checking test 012 control_wrtGauss_netcdf_parallel results ....
 Moving baseline 012 control_wrtGauss_netcdf_parallel files ....
  Moving sfcf000.nc .........OK
@@ -616,14 +616,14 @@ Moving baseline 012 control_wrtGauss_netcdf_parallel files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 122.883533
-  0: The maximum resident set size (KB)                   = 461808
+  0: The total amount of wall time                        = 123.683867
+  0: The maximum resident set size (KB)                   = 469724
 
 Test 012 control_wrtGauss_netcdf_parallel PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_c48
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_c48
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_c48
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_c48
 Checking test 013 control_c48 results ....
 Moving baseline 013 control_c48 files ....
  Moving sfcf000.nc .........OK
@@ -663,14 +663,14 @@ Moving baseline 013 control_c48 files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-0: The total amount of wall time                        = 304.518448
-0: The maximum resident set size (KB)                   = 653108
+0: The total amount of wall time                        = 308.704149
+0: The maximum resident set size (KB)                   = 663016
 
 Test 013 control_c48 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_c192
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_c192
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_c192
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_c192
 Checking test 014 control_c192 results ....
 Moving baseline 014 control_c192 files ....
  Moving sfcf000.nc .........OK
@@ -682,14 +682,14 @@ Moving baseline 014 control_c192 files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 459.179010
-  0: The maximum resident set size (KB)                   = 560136
+  0: The total amount of wall time                        = 457.703538
+  0: The maximum resident set size (KB)                   = 567156
 
 Test 014 control_c192 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_c384
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_c384
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_c384
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_c384
 Checking test 015 control_c384 results ....
 Moving baseline 015 control_c384 files ....
  Moving sfcf000.nc .........OK
@@ -701,14 +701,14 @@ Moving baseline 015 control_c384 files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF12 .........OK
 
-  0: The total amount of wall time                        = 750.168511
-  0: The maximum resident set size (KB)                   = 828184
+  0: The total amount of wall time                        = 751.388322
+  0: The maximum resident set size (KB)                   = 829540
 
 Test 015 control_c384 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_c384gdas
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_c384gdas
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_c384gdas
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_c384gdas
 Checking test 016 control_c384gdas results ....
 Moving baseline 016 control_c384gdas files ....
  Moving sfcf000.nc .........OK
@@ -752,14 +752,14 @@ Moving baseline 016 control_c384gdas files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 670.028204
-  0: The maximum resident set size (KB)                   = 973780
+  0: The total amount of wall time                        = 670.703814
+  0: The maximum resident set size (KB)                   = 978920
 
 Test 016 control_c384gdas PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_stochy
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_stochy
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_stochy
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_stochy
 Checking test 017 control_stochy results ....
 Moving baseline 017 control_stochy files ....
  Moving sfcf000.nc .........OK
@@ -771,14 +771,14 @@ Moving baseline 017 control_stochy files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF12 .........OK
 
-  0: The total amount of wall time                        = 81.325677
-  0: The maximum resident set size (KB)                   = 462796
+  0: The total amount of wall time                        = 81.374743
+  0: The maximum resident set size (KB)                   = 471064
 
 Test 017 control_stochy PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_lndp
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_lndp
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_lndp
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_lndp
 Checking test 018 control_lndp results ....
 Moving baseline 018 control_lndp files ....
  Moving sfcf000.nc .........OK
@@ -790,14 +790,14 @@ Moving baseline 018 control_lndp files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF12 .........OK
 
-  0: The total amount of wall time                        = 72.951291
-  0: The maximum resident set size (KB)                   = 467588
+  0: The total amount of wall time                        = 75.362900
+  0: The maximum resident set size (KB)                   = 471752
 
 Test 018 control_lndp PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_iovr4
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_iovr4
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_iovr4
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_iovr4
 Checking test 019 control_iovr4 results ....
 Moving baseline 019 control_iovr4 files ....
  Moving sfcf000.nc .........OK
@@ -813,14 +813,14 @@ Moving baseline 019 control_iovr4 files ....
  Moving GFSPRS.GrbF21 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 122.659205
-  0: The maximum resident set size (KB)                   = 458984
+  0: The total amount of wall time                        = 128.057508
+  0: The maximum resident set size (KB)                   = 464484
 
 Test 019 control_iovr4 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_iovr5
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_iovr5
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_iovr5
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_iovr5
 Checking test 020 control_iovr5 results ....
 Moving baseline 020 control_iovr5 files ....
  Moving sfcf000.nc .........OK
@@ -836,14 +836,14 @@ Moving baseline 020 control_iovr5 files ....
  Moving GFSPRS.GrbF21 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 127.253475
-  0: The maximum resident set size (KB)                   = 459368
+  0: The total amount of wall time                        = 125.004947
+  0: The maximum resident set size (KB)                   = 469636
 
 Test 020 control_iovr5 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_p8
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_p8
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_p8
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_p8
 Checking test 021 control_p8 results ....
 Moving baseline 021 control_p8 files ....
  Moving sfcf000.nc .........OK
@@ -891,14 +891,14 @@ Moving baseline 021 control_p8 files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 143.624775
-  0: The maximum resident set size (KB)                   = 496692
+  0: The total amount of wall time                        = 138.887174
+  0: The maximum resident set size (KB)                   = 499920
 
 Test 021 control_p8 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_p7_rrtmgp
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_p7_rrtmgp
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_p7_rrtmgp
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_p7_rrtmgp
 Checking test 022 control_p7_rrtmgp results ....
 Moving baseline 022 control_p7_rrtmgp files ....
  Moving sfcf000.nc .........OK
@@ -946,14 +946,14 @@ Moving baseline 022 control_p7_rrtmgp files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 179.215976
-  0: The maximum resident set size (KB)                   = 589340
+  0: The total amount of wall time                        = 177.004086
+  0: The maximum resident set size (KB)                   = 590316
 
 Test 022 control_p7_rrtmgp PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/fv3_regional_control
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/regional_control
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/fv3_regional_control
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/regional_control
 Checking test 023 regional_control results ....
 Moving baseline 023 regional_control files ....
  Moving dynf000.nc .........OK
@@ -965,14 +965,14 @@ Moving baseline 023 regional_control files ....
  Moving NATLEV.GrbF00 .........OK
  Moving NATLEV.GrbF24 .........OK
 
- 0: The total amount of wall time                        = 347.378256
- 0: The maximum resident set size (KB)                   = 579404
+ 0: The total amount of wall time                        = 349.047618
+ 0: The maximum resident set size (KB)                   = 579176
 
 Test 023 regional_control PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/fv3_regional_noquilt
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/regional_noquilt
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/fv3_regional_noquilt
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/regional_noquilt
 Checking test 024 regional_noquilt results ....
 Moving baseline 024 regional_noquilt files ....
  Moving atmos_4xdaily.nc .........OK
@@ -981,14 +981,14 @@ Moving baseline 024 regional_noquilt files ....
  Moving RESTART/fv_core.res.tile1_new.nc .........OK
  Moving RESTART/fv_tracer.res.tile1_new.nc .........OK
 
- 0: The total amount of wall time                        = 357.273022
- 0: The maximum resident set size (KB)                   = 598284
+ 0: The total amount of wall time                        = 356.541918
+ 0: The maximum resident set size (KB)                   = 590220
 
 Test 024 regional_noquilt PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/fv3_regional_hafs
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/regional_hafs
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/fv3_regional_hafs
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/regional_hafs
 Checking test 025 regional_hafs results ....
 Moving baseline 025 regional_hafs files ....
  Moving dynf000.nc .........OK
@@ -998,14 +998,14 @@ Moving baseline 025 regional_hafs files ....
  Moving HURPRS.GrbF00 .........OK
  Moving HURPRS.GrbF24 .........OK
 
- 0: The total amount of wall time                        = 346.998774
- 0: The maximum resident set size (KB)                   = 578396
+ 0: The total amount of wall time                        = 346.283113
+ 0: The maximum resident set size (KB)                   = 585876
 
 Test 025 regional_hafs PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/fv3_regional_netcdf_parallel
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/regional_netcdf_parallel
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/fv3_regional_netcdf_parallel
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/regional_netcdf_parallel
 Checking test 026 regional_netcdf_parallel results ....
 Moving baseline 026 regional_netcdf_parallel files ....
  Moving dynf000.nc .........OK
@@ -1013,14 +1013,14 @@ Moving baseline 026 regional_netcdf_parallel files ....
  Moving phyf000.nc .........OK
  Moving phyf024.nc .........OK
 
- 0: The total amount of wall time                        = 344.652812
- 0: The maximum resident set size (KB)                   = 573872
+ 0: The total amount of wall time                        = 348.060260
+ 0: The maximum resident set size (KB)                   = 579988
 
 Test 026 regional_netcdf_parallel PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/fv3_regional_RRTMGP
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/regional_RRTMGP
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/fv3_regional_RRTMGP
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/regional_RRTMGP
 Checking test 027 regional_RRTMGP results ....
 Moving baseline 027 regional_RRTMGP files ....
  Moving dynf000.nc .........OK
@@ -1032,14 +1032,14 @@ Moving baseline 027 regional_RRTMGP files ....
  Moving NATLEV.GrbF00 .........OK
  Moving NATLEV.GrbF24 .........OK
 
- 0: The total amount of wall time                        = 422.844961
- 0: The maximum resident set size (KB)                   = 702540
+ 0: The total amount of wall time                        = 421.608947
+ 0: The maximum resident set size (KB)                   = 700352
 
 Test 027 regional_RRTMGP PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_control
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_control
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_control
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_control
 Checking test 028 rap_control results ....
 Moving baseline 028 rap_control files ....
  Moving sfcf000.nc .........OK
@@ -1087,14 +1087,14 @@ Moving baseline 028 rap_control files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 345.851142
-  0: The maximum resident set size (KB)                   = 834792
+  0: The total amount of wall time                        = 359.248834
+  0: The maximum resident set size (KB)                   = 831320
 
 Test 028 rap_control PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/regional_spp_sppt_shum_skeb
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/regional_spp_sppt_shum_skeb
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/regional_spp_sppt_shum_skeb
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/regional_spp_sppt_shum_skeb
 Checking test 029 regional_spp_sppt_shum_skeb results ....
 Moving baseline 029 regional_spp_sppt_shum_skeb files ....
  Moving dynf000.nc .........OK
@@ -1106,14 +1106,14 @@ Moving baseline 029 regional_spp_sppt_shum_skeb files ....
  Moving NATLEV.GrbF00 .........OK
  Moving NATLEV.GrbF01 .........OK
 
-  0: The total amount of wall time                        = 288.925199
-  0: The maximum resident set size (KB)                   = 922776
+  0: The total amount of wall time                        = 295.964347
+  0: The maximum resident set size (KB)                   = 921872
 
 Test 029 regional_spp_sppt_shum_skeb PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_sfcdiff
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_sfcdiff
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_sfcdiff
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_sfcdiff
 Checking test 030 rap_sfcdiff results ....
 Moving baseline 030 rap_sfcdiff files ....
  Moving sfcf000.nc .........OK
@@ -1161,14 +1161,14 @@ Moving baseline 030 rap_sfcdiff files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 359.634639
-  0: The maximum resident set size (KB)                   = 835788
+  0: The total amount of wall time                        = 357.045989
+  0: The maximum resident set size (KB)                   = 826728
 
 Test 030 rap_sfcdiff PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hrrr_control
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hrrr_control
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hrrr_control
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hrrr_control
 Checking test 031 hrrr_control results ....
 Moving baseline 031 hrrr_control files ....
  Moving sfcf000.nc .........OK
@@ -1216,14 +1216,14 @@ Moving baseline 031 hrrr_control files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 334.682032
-  0: The maximum resident set size (KB)                   = 831836
+  0: The total amount of wall time                        = 331.530874
+  0: The maximum resident set size (KB)                   = 829320
 
 Test 031 hrrr_control PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rrfs_v1beta
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rrfs_v1beta
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rrfs_v1beta
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rrfs_v1beta
 Checking test 032 rrfs_v1beta results ....
 Moving baseline 032 rrfs_v1beta files ....
  Moving sfcf000.nc .........OK
@@ -1271,14 +1271,14 @@ Moving baseline 032 rrfs_v1beta files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 347.864547
-  0: The maximum resident set size (KB)                   = 829044
+  0: The total amount of wall time                        = 346.484576
+  0: The maximum resident set size (KB)                   = 829928
 
 Test 032 rrfs_v1beta PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rrfs_conus13km_hrrr_warm
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rrfs_conus13km_hrrr_warm
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rrfs_conus13km_hrrr_warm
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rrfs_conus13km_hrrr_warm
 Checking test 033 rrfs_conus13km_hrrr_warm results ....
 Moving baseline 033 rrfs_conus13km_hrrr_warm files ....
  Moving sfcf000.nc .........OK
@@ -1288,14 +1288,14 @@ Moving baseline 033 rrfs_conus13km_hrrr_warm files ....
  Moving atmf001.nc .........OK
  Moving atmf002.nc .........OK
 
-  0: The total amount of wall time                        = 166.503978
-  0: The maximum resident set size (KB)                   = 665488
+  0: The total amount of wall time                        = 165.711233
+  0: The maximum resident set size (KB)                   = 689724
 
 Test 033 rrfs_conus13km_hrrr_warm PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rrfs_conus13km_radar_tten_warm
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rrfs_conus13km_radar_tten_warm
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rrfs_conus13km_radar_tten_warm
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rrfs_conus13km_radar_tten_warm
 Checking test 034 rrfs_conus13km_radar_tten_warm results ....
 Moving baseline 034 rrfs_conus13km_radar_tten_warm files ....
  Moving sfcf000.nc .........OK
@@ -1305,14 +1305,14 @@ Moving baseline 034 rrfs_conus13km_radar_tten_warm files ....
  Moving atmf001.nc .........OK
  Moving atmf002.nc .........OK
 
-  0: The total amount of wall time                        = 174.599974
-  0: The maximum resident set size (KB)                   = 665604
+  0: The total amount of wall time                        = 173.303325
+  0: The maximum resident set size (KB)                   = 696688
 
 Test 034 rrfs_conus13km_radar_tten_warm PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_rrtmgp
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_rrtmgp
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_rrtmgp
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_rrtmgp
 Checking test 035 control_rrtmgp results ....
 Moving baseline 035 control_rrtmgp files ....
  Moving sfcf000.nc .........OK
@@ -1324,14 +1324,14 @@ Moving baseline 035 control_rrtmgp files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 194.451374
-  0: The maximum resident set size (KB)                   = 589300
+  0: The total amount of wall time                        = 186.376719
+  0: The maximum resident set size (KB)                   = 592048
 
 Test 035 control_rrtmgp PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_rrtmgp_c192
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_rrtmgp_c192
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_rrtmgp_c192
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_rrtmgp_c192
 Checking test 036 control_rrtmgp_c192 results ....
 Moving baseline 036 control_rrtmgp_c192 files ....
  Moving sfcf000.nc .........OK
@@ -1343,14 +1343,14 @@ Moving baseline 036 control_rrtmgp_c192 files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF12 .........OK
 
-  0: The total amount of wall time                        = 506.534645
-  0: The maximum resident set size (KB)                   = 802656
+  0: The total amount of wall time                        = 510.497157
+  0: The maximum resident set size (KB)                   = 802952
 
 Test 036 control_rrtmgp_c192 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_csawmg
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_csawmg
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_csawmg
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_csawmg
 Checking test 037 control_csawmg results ....
 Moving baseline 037 control_csawmg files ....
  Moving sfcf000.nc .........OK
@@ -1362,14 +1362,14 @@ Moving baseline 037 control_csawmg files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 315.026374
-  0: The maximum resident set size (KB)                   = 530068
+  0: The total amount of wall time                        = 315.752729
+  0: The maximum resident set size (KB)                   = 530372
 
 Test 037 control_csawmg PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_csawmgt
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_csawmgt
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_csawmgt
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_csawmgt
 Checking test 038 control_csawmgt results ....
 Moving baseline 038 control_csawmgt files ....
  Moving sfcf000.nc .........OK
@@ -1381,14 +1381,14 @@ Moving baseline 038 control_csawmgt files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 313.908641
-  0: The maximum resident set size (KB)                   = 532820
+  0: The total amount of wall time                        = 309.115667
+  0: The maximum resident set size (KB)                   = 532596
 
 Test 038 control_csawmgt PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_flake
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_flake
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_flake
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_flake
 Checking test 039 control_flake results ....
 Moving baseline 039 control_flake files ....
  Moving sfcf000.nc .........OK
@@ -1400,14 +1400,14 @@ Moving baseline 039 control_flake files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 226.752821
-  0: The maximum resident set size (KB)                   = 535944
+  0: The total amount of wall time                        = 226.922538
+  0: The maximum resident set size (KB)                   = 532644
 
 Test 039 control_flake PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_ras
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_ras
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_ras
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_ras
 Checking test 040 control_ras results ....
 Moving baseline 040 control_ras files ....
  Moving sfcf000.nc .........OK
@@ -1419,14 +1419,14 @@ Moving baseline 040 control_ras files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 170.254922
-  0: The maximum resident set size (KB)                   = 493668
+  0: The total amount of wall time                        = 169.709700
+  0: The maximum resident set size (KB)                   = 497056
 
 Test 040 control_ras PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_thompson
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_thompson
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_thompson
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_thompson
 Checking test 041 control_thompson results ....
 Moving baseline 041 control_thompson files ....
  Moving sfcf000.nc .........OK
@@ -1438,14 +1438,14 @@ Moving baseline 041 control_thompson files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 207.043776
-  0: The maximum resident set size (KB)                   = 846420
+  0: The total amount of wall time                        = 213.193579
+  0: The maximum resident set size (KB)                   = 847500
 
 Test 041 control_thompson PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_thompson_no_aero
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_thompson_no_aero
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_thompson_no_aero
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_thompson_no_aero
 Checking test 042 control_thompson_no_aero results ....
 Moving baseline 042 control_thompson_no_aero files ....
  Moving sfcf000.nc .........OK
@@ -1457,27 +1457,27 @@ Moving baseline 042 control_thompson_no_aero files ....
  Moving GFSPRS.GrbF00 .........OK
  Moving GFSPRS.GrbF24 .........OK
 
-  0: The total amount of wall time                        = 201.484683
-  0: The maximum resident set size (KB)                   = 841968
+  0: The total amount of wall time                        = 205.891838
+  0: The maximum resident set size (KB)                   = 841068
 
 Test 042 control_thompson_no_aero PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_wam_repro
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_wam_repro
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_wam_repro
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_wam_repro
 Checking test 043 control_wam results ....
 Moving baseline 043 control_wam files ....
  Moving sfcf024.nc .........OK
  Moving atmf024.nc .........OK
 
-  0: The total amount of wall time                        = 119.957569
-  0: The maximum resident set size (KB)                   = 227308
+  0: The total amount of wall time                        = 117.807456
+  0: The maximum resident set size (KB)                   = 228852
 
 Test 043 control_wam PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_debug
 Checking test 044 control_debug results ....
 Moving baseline 044 control_debug files ....
  Moving sfcf000.nc .........OK
@@ -1485,14 +1485,14 @@ Moving baseline 044 control_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 138.993199
-  0: The maximum resident set size (KB)                   = 532836
+  0: The total amount of wall time                        = 141.225564
+  0: The maximum resident set size (KB)                   = 531928
 
 Test 044 control_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_CubedSphereGrid_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_CubedSphereGrid_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_CubedSphereGrid_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_CubedSphereGrid_debug
 Checking test 045 control_CubedSphereGrid_debug results ....
 Moving baseline 045 control_CubedSphereGrid_debug files ....
  Moving sfcf000.tile1.nc .........OK
@@ -1520,14 +1520,14 @@ Moving baseline 045 control_CubedSphereGrid_debug files ....
  Moving atmf001.tile5.nc .........OK
  Moving atmf001.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 153.197270
-  0: The maximum resident set size (KB)                   = 530528
+  0: The total amount of wall time                        = 151.597067
+  0: The maximum resident set size (KB)                   = 532308
 
 Test 045 control_CubedSphereGrid_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_wrtGauss_netcdf_parallel_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_wrtGauss_netcdf_parallel_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_wrtGauss_netcdf_parallel_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_wrtGauss_netcdf_parallel_debug
 Checking test 046 control_wrtGauss_netcdf_parallel_debug results ....
 Moving baseline 046 control_wrtGauss_netcdf_parallel_debug files ....
  Moving sfcf000.nc .........OK
@@ -1535,14 +1535,14 @@ Moving baseline 046 control_wrtGauss_netcdf_parallel_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 143.956248
-  0: The maximum resident set size (KB)                   = 534708
+  0: The total amount of wall time                        = 143.134545
+  0: The maximum resident set size (KB)                   = 528804
 
 Test 046 control_wrtGauss_netcdf_parallel_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_stochy_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_stochy_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_stochy_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_stochy_debug
 Checking test 047 control_stochy_debug results ....
 Moving baseline 047 control_stochy_debug files ....
  Moving sfcf000.nc .........OK
@@ -1550,14 +1550,14 @@ Moving baseline 047 control_stochy_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 162.047429
-  0: The maximum resident set size (KB)                   = 534772
+  0: The total amount of wall time                        = 162.739339
+  0: The maximum resident set size (KB)                   = 538616
 
 Test 047 control_stochy_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_lndp_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_lndp_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_lndp_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_lndp_debug
 Checking test 048 control_lndp_debug results ....
 Moving baseline 048 control_lndp_debug files ....
  Moving sfcf000.nc .........OK
@@ -1565,14 +1565,14 @@ Moving baseline 048 control_lndp_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 142.941731
-  0: The maximum resident set size (KB)                   = 536428
+  0: The total amount of wall time                        = 143.159516
+  0: The maximum resident set size (KB)                   = 534916
 
 Test 048 control_lndp_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_rrtmgp_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_rrtmgp_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_rrtmgp_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_rrtmgp_debug
 Checking test 049 control_rrtmgp_debug results ....
 Moving baseline 049 control_rrtmgp_debug files ....
  Moving sfcf000.nc .........OK
@@ -1580,14 +1580,14 @@ Moving baseline 049 control_rrtmgp_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 157.289766
-  0: The maximum resident set size (KB)                   = 639332
+  0: The total amount of wall time                        = 154.719853
+  0: The maximum resident set size (KB)                   = 640608
 
 Test 049 control_rrtmgp_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_csawmg_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_csawmg_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_csawmg_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_csawmg_debug
 Checking test 050 control_csawmg_debug results ....
 Moving baseline 050 control_csawmg_debug files ....
  Moving sfcf000.nc .........OK
@@ -1595,14 +1595,14 @@ Moving baseline 050 control_csawmg_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 218.466772
-  0: The maximum resident set size (KB)                   = 574988
+  0: The total amount of wall time                        = 222.994660
+  0: The maximum resident set size (KB)                   = 573424
 
 Test 050 control_csawmg_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_csawmgt_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_csawmgt_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_csawmgt_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_csawmgt_debug
 Checking test 051 control_csawmgt_debug results ....
 Moving baseline 051 control_csawmgt_debug files ....
  Moving sfcf000.nc .........OK
@@ -1610,14 +1610,14 @@ Moving baseline 051 control_csawmgt_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 220.505705
-  0: The maximum resident set size (KB)                   = 570876
+  0: The total amount of wall time                        = 216.871255
+  0: The maximum resident set size (KB)                   = 569088
 
 Test 051 control_csawmgt_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_ras_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_ras_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_ras_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_ras_debug
 Checking test 052 control_ras_debug results ....
 Moving baseline 052 control_ras_debug files ....
  Moving sfcf000.nc .........OK
@@ -1625,14 +1625,14 @@ Moving baseline 052 control_ras_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 146.280391
-  0: The maximum resident set size (KB)                   = 543368
+  0: The total amount of wall time                        = 145.103377
+  0: The maximum resident set size (KB)                   = 547160
 
 Test 052 control_ras_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_diag_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_diag_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_diag_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_diag_debug
 Checking test 053 control_diag_debug results ....
 Moving baseline 053 control_diag_debug files ....
  Moving sfcf000.nc .........OK
@@ -1640,14 +1640,14 @@ Moving baseline 053 control_diag_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 151.602608
-  0: The maximum resident set size (KB)                   = 591944
+  0: The total amount of wall time                        = 155.825884
+  0: The maximum resident set size (KB)                   = 586416
 
 Test 053 control_diag_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_debug_p8
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_debug_p8
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_debug_p8
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_debug_p8
 Checking test 054 control_debug_p8 results ....
 Moving baseline 054 control_debug_p8 files ....
  Moving sfcf000.nc .........OK
@@ -1655,14 +1655,14 @@ Moving baseline 054 control_debug_p8 files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 153.172438
-  0: The maximum resident set size (KB)                   = 555664
+  0: The total amount of wall time                        = 154.941857
+  0: The maximum resident set size (KB)                   = 556828
 
 Test 054 control_debug_p8 PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_thompson_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_thompson_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_thompson_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_thompson_debug
 Checking test 055 control_thompson_debug results ....
 Moving baseline 055 control_thompson_debug files ....
  Moving sfcf000.nc .........OK
@@ -1670,14 +1670,14 @@ Moving baseline 055 control_thompson_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 160.954172
-  0: The maximum resident set size (KB)                   = 891840
+  0: The total amount of wall time                        = 168.955483
+  0: The maximum resident set size (KB)                   = 891516
 
 Test 055 control_thompson_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_thompson_no_aero_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_thompson_no_aero_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_thompson_no_aero_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_thompson_no_aero_debug
 Checking test 056 control_thompson_no_aero_debug results ....
 Moving baseline 056 control_thompson_no_aero_debug files ....
  Moving sfcf000.nc .........OK
@@ -1685,14 +1685,14 @@ Moving baseline 056 control_thompson_no_aero_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 163.176357
-  0: The maximum resident set size (KB)                   = 886796
+  0: The total amount of wall time                        = 163.522075
+  0: The maximum resident set size (KB)                   = 890076
 
 Test 056 control_thompson_no_aero_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_thompson_debug_extdiag
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_thompson_extdiag_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_thompson_debug_extdiag
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_thompson_extdiag_debug
 Checking test 057 control_thompson_extdiag_debug results ....
 Moving baseline 057 control_thompson_extdiag_debug files ....
  Moving sfcf000.nc .........OK
@@ -1700,14 +1700,14 @@ Moving baseline 057 control_thompson_extdiag_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 177.781352
-  0: The maximum resident set size (KB)                   = 922056
+  0: The total amount of wall time                        = 174.835442
+  0: The maximum resident set size (KB)                   = 919484
 
 Test 057 control_thompson_extdiag_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_thompson_progcld_thompson_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_thompson_progcld_thompson_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_thompson_progcld_thompson_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_thompson_progcld_thompson_debug
 Checking test 058 control_thompson_progcld_thompson_debug results ....
 Moving baseline 058 control_thompson_progcld_thompson_debug files ....
  Moving sfcf000.nc .........OK
@@ -1715,14 +1715,14 @@ Moving baseline 058 control_thompson_progcld_thompson_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 168.412276
-  0: The maximum resident set size (KB)                   = 893588
+  0: The total amount of wall time                        = 170.784154
+  0: The maximum resident set size (KB)                   = 889256
 
 Test 058 control_thompson_progcld_thompson_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/fv3_regional_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/regional_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/fv3_regional_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/regional_debug
 Checking test 059 regional_debug results ....
 Moving baseline 059 regional_debug files ....
  Moving dynf000.nc .........OK
@@ -1730,14 +1730,14 @@ Moving baseline 059 regional_debug files ....
  Moving phyf000.nc .........OK
  Moving phyf001.nc .........OK
 
- 0: The total amount of wall time                        = 234.868315
- 0: The maximum resident set size (KB)                   = 607236
+ 0: The total amount of wall time                        = 240.071053
+ 0: The maximum resident set size (KB)                   = 607452
 
 Test 059 regional_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_control_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_control_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_control_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_control_debug
 Checking test 060 rap_control_debug results ....
 Moving baseline 060 rap_control_debug files ....
  Moving sfcf000.nc .........OK
@@ -1745,14 +1745,14 @@ Moving baseline 060 rap_control_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 253.846316
-  0: The maximum resident set size (KB)                   = 900416
+  0: The total amount of wall time                        = 262.925455
+  0: The maximum resident set size (KB)                   = 905892
 
 Test 060 rap_control_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_diag_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_diag_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_diag_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_diag_debug
 Checking test 061 rap_diag_debug results ....
 Moving baseline 061 rap_diag_debug files ....
  Moving sfcf000.nc .........OK
@@ -1760,14 +1760,14 @@ Moving baseline 061 rap_diag_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 272.763148
-  0: The maximum resident set size (KB)                   = 981552
+  0: The total amount of wall time                        = 278.663974
+  0: The maximum resident set size (KB)                   = 990836
 
 Test 061 rap_diag_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_cires_ugwp_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_cires_ugwp_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_cires_ugwp_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_cires_ugwp_debug
 Checking test 062 rap_cires_ugwp_debug results ....
 Moving baseline 062 rap_cires_ugwp_debug files ....
  Moving sfcf000.nc .........OK
@@ -1775,14 +1775,14 @@ Moving baseline 062 rap_cires_ugwp_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 262.584957
-  0: The maximum resident set size (KB)                   = 899256
+  0: The total amount of wall time                        = 262.471246
+  0: The maximum resident set size (KB)                   = 905908
 
 Test 062 rap_cires_ugwp_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_noah_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_noah_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_noah_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_noah_debug
 Checking test 063 rap_noah_debug results ....
 Moving baseline 063 rap_noah_debug files ....
  Moving sfcf000.nc .........OK
@@ -1790,14 +1790,14 @@ Moving baseline 063 rap_noah_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 257.278779
-  0: The maximum resident set size (KB)                   = 897080
+  0: The total amount of wall time                        = 258.064823
+  0: The maximum resident set size (KB)                   = 900248
 
 Test 063 rap_noah_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_rrtmgp_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_rrtmgp_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_rrtmgp_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_rrtmgp_debug
 Checking test 064 rap_rrtmgp_debug results ....
 Moving baseline 064 rap_rrtmgp_debug files ....
  Moving sfcf000.nc .........OK
@@ -1805,14 +1805,14 @@ Moving baseline 064 rap_rrtmgp_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 438.657800
-  0: The maximum resident set size (KB)                   = 1008820
+  0: The total amount of wall time                        = 430.989686
+  0: The maximum resident set size (KB)                   = 1009696
 
 Test 064 rap_rrtmgp_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_lndp_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_lndp_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_lndp_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_lndp_debug
 Checking test 065 rap_lndp_debug results ....
 Moving baseline 065 rap_lndp_debug files ....
  Moving sfcf000.nc .........OK
@@ -1820,14 +1820,14 @@ Moving baseline 065 rap_lndp_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 257.153309
-  0: The maximum resident set size (KB)                   = 902472
+  0: The total amount of wall time                        = 267.900155
+  0: The maximum resident set size (KB)                   = 903140
 
 Test 065 rap_lndp_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_sfcdiff_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_sfcdiff_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_sfcdiff_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_sfcdiff_debug
 Checking test 066 rap_sfcdiff_debug results ....
 Moving baseline 066 rap_sfcdiff_debug files ....
  Moving sfcf000.nc .........OK
@@ -1835,14 +1835,14 @@ Moving baseline 066 rap_sfcdiff_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 257.084464
-  0: The maximum resident set size (KB)                   = 898552
+  0: The total amount of wall time                        = 254.604848
+  0: The maximum resident set size (KB)                   = 903072
 
 Test 066 rap_sfcdiff_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_flake_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_flake_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_flake_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_flake_debug
 Checking test 067 rap_flake_debug results ....
 Moving baseline 067 rap_flake_debug files ....
  Moving sfcf000.nc .........OK
@@ -1850,14 +1850,14 @@ Moving baseline 067 rap_flake_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 259.736533
-  0: The maximum resident set size (KB)                   = 901732
+  0: The total amount of wall time                        = 255.051374
+  0: The maximum resident set size (KB)                   = 902464
 
 Test 067 rap_flake_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_noah_sfcdiff_cires_ugwp_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_noah_sfcdiff_cires_ugwp_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_noah_sfcdiff_cires_ugwp_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_noah_sfcdiff_cires_ugwp_debug
 Checking test 068 rap_noah_sfcdiff_cires_ugwp_debug results ....
 Moving baseline 068 rap_noah_sfcdiff_cires_ugwp_debug files ....
  Moving sfcf000.nc .........OK
@@ -1865,14 +1865,14 @@ Moving baseline 068 rap_noah_sfcdiff_cires_ugwp_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 431.807915
-  0: The maximum resident set size (KB)                   = 899532
+  0: The total amount of wall time                        = 431.739902
+  0: The maximum resident set size (KB)                   = 901336
 
 Test 068 rap_noah_sfcdiff_cires_ugwp_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rap_progcld_thompson_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rap_progcld_thompson_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rap_progcld_thompson_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rap_progcld_thompson_debug
 Checking test 069 rap_progcld_thompson_debug results ....
 Moving baseline 069 rap_progcld_thompson_debug files ....
  Moving sfcf000.nc .........OK
@@ -1880,14 +1880,14 @@ Moving baseline 069 rap_progcld_thompson_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 263.628234
-  0: The maximum resident set size (KB)                   = 897384
+  0: The total amount of wall time                        = 263.431539
+  0: The maximum resident set size (KB)                   = 903928
 
 Test 069 rap_progcld_thompson_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/rrfs_v1beta_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/rrfs_v1beta_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/rrfs_v1beta_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/rrfs_v1beta_debug
 Checking test 070 rrfs_v1beta_debug results ....
 Moving baseline 070 rrfs_v1beta_debug files ....
  Moving sfcf000.nc .........OK
@@ -1895,53 +1895,53 @@ Moving baseline 070 rrfs_v1beta_debug files ....
  Moving atmf000.nc .........OK
  Moving atmf001.nc .........OK
 
-  0: The total amount of wall time                        = 258.633968
-  0: The maximum resident set size (KB)                   = 897988
+  0: The total amount of wall time                        = 263.077650
+  0: The maximum resident set size (KB)                   = 900308
 
 Test 070 rrfs_v1beta_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_wam_debug
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_wam_debug
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_wam_debug
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_wam_debug
 Checking test 071 control_wam_debug results ....
 Moving baseline 071 control_wam_debug files ....
  Moving sfcf019.nc .........OK
  Moving atmf019.nc .........OK
 
-  0: The total amount of wall time                        = 278.850579
-  0: The maximum resident set size (KB)                   = 251484
+  0: The total amount of wall time                        = 278.353901
+  0: The maximum resident set size (KB)                   = 250708
 
 Test 071 control_wam_debug PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_atm
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_atm
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_atm
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_atm
 Checking test 072 hafs_regional_atm results ....
 Moving baseline 072 hafs_regional_atm files ....
  Moving atmf006.nc .........OK
  Moving sfcf006.nc .........OK
 
-  0: The total amount of wall time                        = 254.398347
-  0: The maximum resident set size (KB)                   = 699856
+  0: The total amount of wall time                        = 257.544364
+  0: The maximum resident set size (KB)                   = 707628
 
 Test 072 hafs_regional_atm PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_atm_thompson_gfdlsf
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_atm_thompson_gfdlsf
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_atm_thompson_gfdlsf
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_atm_thompson_gfdlsf
 Checking test 073 hafs_regional_atm_thompson_gfdlsf results ....
 Moving baseline 073 hafs_regional_atm_thompson_gfdlsf files ....
  Moving atmf006.nc .........OK
  Moving sfcf006.nc .........OK
 
-  0: The total amount of wall time                        = 291.629786
-  0: The maximum resident set size (KB)                   = 1062280
+  0: The total amount of wall time                        = 288.790770
+  0: The maximum resident set size (KB)                   = 1065924
 
 Test 073 hafs_regional_atm_thompson_gfdlsf PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_atm_ocn
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_atm_ocn
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_atm_ocn
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_atm_ocn
 Checking test 074 hafs_regional_atm_ocn results ....
 Moving baseline 074 hafs_regional_atm_ocn files ....
  Moving atmf006.nc .........OK
@@ -1951,14 +1951,14 @@ Moving baseline 074 hafs_regional_atm_ocn files ....
  Moving ufs.hafs.cpl.hi.2019-08-29-21600.nc .........OK
  Moving ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
 
-  0: The total amount of wall time                        = 342.326218
-  0: The maximum resident set size (KB)                   = 718584
+  0: The total amount of wall time                        = 343.677454
+  0: The maximum resident set size (KB)                   = 722988
 
 Test 074 hafs_regional_atm_ocn PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_atm_wav
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_atm_wav
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_atm_wav
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_atm_wav
 Checking test 075 hafs_regional_atm_wav results ....
 Moving baseline 075 hafs_regional_atm_wav files ....
  Moving atmf006.nc .........OK
@@ -1966,14 +1966,14 @@ Moving baseline 075 hafs_regional_atm_wav files ....
  Moving out_grd.ww3 .........OK
  Moving out_pnt.ww3 .........OK
 
-  0: The total amount of wall time                        = 814.428717
-  0: The maximum resident set size (KB)                   = 718960
+  0: The total amount of wall time                        = 811.137441
+  0: The maximum resident set size (KB)                   = 722308
 
 Test 075 hafs_regional_atm_wav PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_atm_ocn_wav
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_atm_ocn_wav
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_atm_ocn_wav
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_atm_ocn_wav
 Checking test 076 hafs_regional_atm_ocn_wav results ....
 Moving baseline 076 hafs_regional_atm_ocn_wav files ....
  Moving atmf006.nc .........OK
@@ -1983,14 +1983,14 @@ Moving baseline 076 hafs_regional_atm_ocn_wav files ....
  Moving out_grd.ww3 .........OK
  Moving out_pnt.ww3 .........OK
 
-  0: The total amount of wall time                        = 911.697905
-  0: The maximum resident set size (KB)                   = 718388
+  0: The total amount of wall time                        = 927.732941
+  0: The maximum resident set size (KB)                   = 719152
 
 Test 076 hafs_regional_atm_ocn_wav PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_1nest_atm
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_1nest_atm
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_1nest_atm
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_1nest_atm
 Checking test 077 hafs_regional_1nest_atm results ....
 Moving baseline 077 hafs_regional_1nest_atm files ....
  Moving atmf006.nc .........OK
@@ -1998,14 +1998,14 @@ Moving baseline 077 hafs_regional_1nest_atm files ....
  Moving atm.nest02.f006.nc .........OK
  Moving sfc.nest02.f006.nc .........OK
 
-  0: The total amount of wall time                        = 405.811795
-  0: The maximum resident set size (KB)                   = 312044
+  0: The total amount of wall time                        = 401.934842
+  0: The maximum resident set size (KB)                   = 320100
 
 Test 077 hafs_regional_1nest_atm PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_telescopic_2nests_atm
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_telescopic_2nests_atm
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_telescopic_2nests_atm
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_telescopic_2nests_atm
 Checking test 078 hafs_regional_telescopic_2nests_atm results ....
 Moving baseline 078 hafs_regional_telescopic_2nests_atm files ....
  Moving atmf006.nc .........OK
@@ -2015,14 +2015,14 @@ Moving baseline 078 hafs_regional_telescopic_2nests_atm files ....
  Moving atm.nest03.f006.nc .........OK
  Moving sfc.nest03.f006.nc .........OK
 
-  0: The total amount of wall time                        = 426.407969
-  0: The maximum resident set size (KB)                   = 319132
+  0: The total amount of wall time                        = 423.125760
+  0: The maximum resident set size (KB)                   = 331512
 
 Test 078 hafs_regional_telescopic_2nests_atm PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_global_1nest_atm
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_global_1nest_atm
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_global_1nest_atm
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_global_1nest_atm
 Checking test 079 hafs_global_1nest_atm results ....
 Moving baseline 079 hafs_global_1nest_atm files ....
  Moving atmf006.nc .........OK
@@ -2030,14 +2030,14 @@ Moving baseline 079 hafs_global_1nest_atm files ....
  Moving atm.nest02.f006.nc .........OK
  Moving sfc.nest02.f006.nc .........OK
 
-  0: The total amount of wall time                        = 191.982398
-  0: The maximum resident set size (KB)                   = 196776
+  0: The total amount of wall time                        = 190.131678
+  0: The maximum resident set size (KB)                   = 203804
 
 Test 079 hafs_global_1nest_atm PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_global_multiple_4nests_atm
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_global_multiple_4nests_atm
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_global_multiple_4nests_atm
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_global_multiple_4nests_atm
 Checking test 080 hafs_global_multiple_4nests_atm results ....
 Moving baseline 080 hafs_global_multiple_4nests_atm files ....
  Moving atmf006.nc .........OK
@@ -2051,14 +2051,14 @@ Moving baseline 080 hafs_global_multiple_4nests_atm files ....
  Moving atm.nest05.f006.nc .........OK
  Moving sfc.nest05.f006.nc .........OK
 
-  0: The total amount of wall time                        = 524.331425
-  0: The maximum resident set size (KB)                   = 275764
+  0: The total amount of wall time                        = 525.604309
+  0: The maximum resident set size (KB)                   = 255256
 
 Test 080 hafs_global_multiple_4nests_atm PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_docn
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_docn
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_docn
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_docn
 Checking test 081 hafs_regional_docn results ....
 Moving baseline 081 hafs_regional_docn files ....
  Moving atmf006.nc .........OK
@@ -2067,14 +2067,14 @@ Moving baseline 081 hafs_regional_docn files ....
  Moving ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
  Moving ufs.hafs.docn.r.2019-08-29-21600.nc .........OK
 
-  0: The total amount of wall time                        = 329.888560
-  0: The maximum resident set size (KB)                   = 723252
+  0: The total amount of wall time                        = 324.804891
+  0: The maximum resident set size (KB)                   = 720440
 
 Test 081 hafs_regional_docn PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_docn_oisst
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_docn_oisst
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_docn_oisst
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_docn_oisst
 Checking test 082 hafs_regional_docn_oisst results ....
 Moving baseline 082 hafs_regional_docn_oisst files ....
  Moving atmf006.nc .........OK
@@ -2083,98 +2083,98 @@ Moving baseline 082 hafs_regional_docn_oisst files ....
  Moving ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
  Moving ufs.hafs.docn.r.2019-08-29-21600.nc .........OK
 
-  0: The total amount of wall time                        = 322.243973
-  0: The maximum resident set size (KB)                   = 714708
+  0: The total amount of wall time                        = 331.879336
+  0: The maximum resident set size (KB)                   = 724148
 
 Test 082 hafs_regional_docn_oisst PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/hafs_regional_datm_cdeps
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/hafs_regional_datm_cdeps
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/hafs_regional_datm_cdeps
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/hafs_regional_datm_cdeps
 Checking test 083 hafs_regional_datm_cdeps results ....
 Moving baseline 083 hafs_regional_datm_cdeps files ....
  Moving ufs.hafs.cpl.hi.2019-08-30-00000.nc .........OK
  Moving ufs.hafs.cpl.r.2019-08-30-00000.nc .........OK
  Moving ufs.hafs.datm.r.2019-08-30-00000.nc .........OK
 
-  0: The total amount of wall time                        = 953.127457
-  0: The maximum resident set size (KB)                   = 855560
+  0: The total amount of wall time                        = 995.409262
+  0: The maximum resident set size (KB)                   = 851352
 
 Test 083 hafs_regional_datm_cdeps PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/datm_cdeps_control_cfsr
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/datm_cdeps_control_cfsr
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/datm_cdeps_control_cfsr
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/datm_cdeps_control_cfsr
 Checking test 084 datm_cdeps_control_cfsr results ....
 Moving baseline 084 datm_cdeps_control_cfsr files ....
  Moving RESTART/MOM.res.nc .........OK
  Moving RESTART/iced.2011-10-02-00000.nc .........OK
  Moving RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
 
- 0: The total amount of wall time                        = 142.524038
- 0: The maximum resident set size (KB)                   = 719168
+ 0: The total amount of wall time                        = 141.323058
+ 0: The maximum resident set size (KB)                   = 718168
 
 Test 084 datm_cdeps_control_cfsr PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/datm_cdeps_control_gefs
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/datm_cdeps_control_gefs
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/datm_cdeps_control_gefs
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/datm_cdeps_control_gefs
 Checking test 085 datm_cdeps_control_gefs results ....
 Moving baseline 085 datm_cdeps_control_gefs files ....
  Moving RESTART/MOM.res.nc .........OK
  Moving RESTART/iced.2011-10-02-00000.nc .........OK
  Moving RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
 
- 0: The total amount of wall time                        = 137.267153
- 0: The maximum resident set size (KB)                   = 620052
+ 0: The total amount of wall time                        = 137.246370
+ 0: The maximum resident set size (KB)                   = 617904
 
 Test 085 datm_cdeps_control_gefs PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/datm_cdeps_stochy_gefs
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/datm_cdeps_stochy_gefs
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/datm_cdeps_stochy_gefs
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/datm_cdeps_stochy_gefs
 Checking test 086 datm_cdeps_stochy_gefs results ....
 Moving baseline 086 datm_cdeps_stochy_gefs files ....
  Moving RESTART/MOM.res.nc .........OK
  Moving RESTART/iced.2011-10-02-00000.nc .........OK
  Moving RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
 
- 0: The total amount of wall time                        = 138.898044
- 0: The maximum resident set size (KB)                   = 620452
+ 0: The total amount of wall time                        = 139.755978
+ 0: The maximum resident set size (KB)                   = 620728
 
 Test 086 datm_cdeps_stochy_gefs PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/datm_cdeps_bulk_cfsr
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/datm_cdeps_bulk_cfsr
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/datm_cdeps_bulk_cfsr
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/datm_cdeps_bulk_cfsr
 Checking test 087 datm_cdeps_bulk_cfsr results ....
 Moving baseline 087 datm_cdeps_bulk_cfsr files ....
  Moving RESTART/MOM.res.nc .........OK
  Moving RESTART/iced.2011-10-02-00000.nc .........OK
  Moving RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
 
- 0: The total amount of wall time                        = 142.467745
- 0: The maximum resident set size (KB)                   = 719356
+ 0: The total amount of wall time                        = 140.914278
+ 0: The maximum resident set size (KB)                   = 718636
 
 Test 087 datm_cdeps_bulk_cfsr PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/datm_cdeps_bulk_gefs
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/datm_cdeps_bulk_gefs
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/datm_cdeps_bulk_gefs
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/datm_cdeps_bulk_gefs
 Checking test 088 datm_cdeps_bulk_gefs results ....
 Moving baseline 088 datm_cdeps_bulk_gefs files ....
  Moving RESTART/MOM.res.nc .........OK
  Moving RESTART/iced.2011-10-02-00000.nc .........OK
  Moving RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
 
- 0: The total amount of wall time                        = 135.358440
- 0: The maximum resident set size (KB)                   = 618936
+ 0: The total amount of wall time                        = 136.159155
+ 0: The maximum resident set size (KB)                   = 618328
 
 Test 088 datm_cdeps_bulk_gefs PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/datm_cdeps_mx025_cfsr
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/datm_cdeps_mx025_cfsr
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/datm_cdeps_mx025_cfsr
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/datm_cdeps_mx025_cfsr
 Checking test 089 datm_cdeps_mx025_cfsr results ....
 Moving baseline 089 datm_cdeps_mx025_cfsr files ....
  Moving RESTART/MOM.res.nc .........OK
@@ -2184,14 +2184,14 @@ Moving baseline 089 datm_cdeps_mx025_cfsr files ....
  Moving RESTART/iced.2011-10-01-43200.nc .........OK
  Moving RESTART/DATM_CFSR.cpl.r.2011-10-01-43200.nc .........OK
 
-  0: The total amount of wall time                        = 303.751534
-  0: The maximum resident set size (KB)                   = 558808
+  0: The total amount of wall time                        = 304.865428
+  0: The maximum resident set size (KB)                   = 559244
 
 Test 089 datm_cdeps_mx025_cfsr PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/datm_cdeps_mx025_gefs
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/datm_cdeps_mx025_gefs
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/datm_cdeps_mx025_gefs
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/datm_cdeps_mx025_gefs
 Checking test 090 datm_cdeps_mx025_gefs results ....
 Moving baseline 090 datm_cdeps_mx025_gefs files ....
  Moving RESTART/MOM.res.nc .........OK
@@ -2201,42 +2201,42 @@ Moving baseline 090 datm_cdeps_mx025_gefs files ....
  Moving RESTART/iced.2011-10-01-43200.nc .........OK
  Moving RESTART/DATM_GEFS.cpl.r.2011-10-01-43200.nc .........OK
 
-  0: The total amount of wall time                        = 299.557496
-  0: The maximum resident set size (KB)                   = 528776
+  0: The total amount of wall time                        = 301.536372
+  0: The maximum resident set size (KB)                   = 530844
 
 Test 090 datm_cdeps_mx025_gefs PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/datm_cdeps_3072x1536_cfsr
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/datm_cdeps_3072x1536_cfsr
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/datm_cdeps_3072x1536_cfsr
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/datm_cdeps_3072x1536_cfsr
 Checking test 091 datm_cdeps_3072x1536_cfsr results ....
 Moving baseline 091 datm_cdeps_3072x1536_cfsr files ....
  Moving RESTART/MOM.res.nc .........OK
  Moving RESTART/iced.2011-10-02-00000.nc .........OK
  Moving RESTART/DATM_CFSR3072x1536.cpl.r.2011-10-02-00000.nc .........OK
 
- 0: The total amount of wall time                        = 190.050268
- 0: The maximum resident set size (KB)                   = 1832888
+ 0: The total amount of wall time                        = 192.556658
+ 0: The maximum resident set size (KB)                   = 1831124
 
 Test 091 datm_cdeps_3072x1536_cfsr PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/datm_cdeps_debug_cfsr
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/datm_cdeps_debug_cfsr
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/datm_cdeps_debug_cfsr
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/datm_cdeps_debug_cfsr
 Checking test 092 datm_cdeps_debug_cfsr results ....
 Moving baseline 092 datm_cdeps_debug_cfsr files ....
  Moving RESTART/MOM.res.nc .........OK
  Moving RESTART/iced.2011-10-01-21600.nc .........OK
  Moving RESTART/DATM_CFSR.cpl.r.2011-10-01-21600.nc .........OK
 
- 0: The total amount of wall time                        = 431.081118
- 0: The maximum resident set size (KB)                   = 725672
+ 0: The total amount of wall time                        = 432.743139
+ 0: The maximum resident set size (KB)                   = 726284
 
 Test 092 datm_cdeps_debug_cfsr PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_atmwav
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_atmwav
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_atmwav
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_atmwav
 Checking test 093 control_atmwav results ....
 Moving baseline 093 control_atmwav files ....
  Moving sfcf000.nc .........OK
@@ -2281,14 +2281,14 @@ Moving baseline 093 control_atmwav files ....
  Moving RESTART/sfc_data.tile6.nc .........OK
  Moving 20210322.180000.restart.glo_1deg .........OK
 
-  0: The total amount of wall time                        = 79.080647
-  0: The maximum resident set size (KB)                   = 491660
+  0: The total amount of wall time                        = 77.225686
+  0: The maximum resident set size (KB)                   = 494504
 
 Test 093 control_atmwav PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_c384gdas_wav
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_c384gdas_wav
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_c384gdas_wav
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_c384gdas_wav
 Checking test 094 control_c384gdas_wav results ....
 Moving baseline 094 control_c384gdas_wav files ....
  Moving sfcf000.nc .........OK
@@ -2335,14 +2335,14 @@ Moving baseline 094 control_c384gdas_wav files ....
  Moving 20210322.030000.restart.gnh_10m .........OK
  Moving 20210322.030000.restart.gsh_15m .........OK
 
-  0: The total amount of wall time                        = 694.321480
-  0: The maximum resident set size (KB)                   = 1056544
+  0: The total amount of wall time                        = 702.079440
+  0: The maximum resident set size (KB)                   = 1053616
 
 Test 094 control_c384gdas_wav PASS
 
 
-baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220419/INTEL/control_atm_aerosols
-working dir  = /scratch1/BMC/gsd-fv3-dev/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_193564/control_atm_aerosols
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220517/INTEL/control_atm_aerosols
+working dir  = /scratch1/BMC/wrfruc/smirnova/stmp2/Tanya.Smirnova/FV3_RT/rt_182445/control_atm_aerosols
 Checking test 095 control_atm_aerosols results ....
 Moving baseline 095 control_atm_aerosols files ....
  Moving sfcf000.nc .........OK
@@ -2390,12 +2390,12 @@ Moving baseline 095 control_atm_aerosols files ....
  Moving RESTART/sfc_data.tile5.nc .........OK
  Moving RESTART/sfc_data.tile6.nc .........OK
 
-  0: The total amount of wall time                        = 276.681781
-  0: The maximum resident set size (KB)                   = 889536
+  0: The total amount of wall time                        = 273.516152
+  0: The maximum resident set size (KB)                   = 887200
 
 Test 095 control_atm_aerosols PASS
 
 
 REGRESSION TEST WAS SUCCESSFUL
-Tue Apr 19 19:22:50 UTC 2022
-Elapsed time: 02h:11m:59s. Have a nice day!
+Wed May 18 18:31:42 UTC 2022
+Elapsed time: 01h:28m:59s. Have a nice day!
