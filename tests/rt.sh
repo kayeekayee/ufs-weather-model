@@ -257,7 +257,7 @@ elif [[ $MACHINE_ID = hera.* ]]; then
 
   #ACCNR="${ACCNR:-fv3-cpu}
   PARTITION=
-  dprefix=/scratch1/BMC/wrfruc/smirnova
+  dprefix=/scratch1/NCEPDEV
   DISKNM=/scratch2/BMC/wrfruc/RT
   #DISKNM=$dprefix/nems/emc.nemspara/RT
   STMP=$dprefix/stmp4
@@ -486,7 +486,7 @@ if [[ $TESTS_FILE =~ '35d' ]] || [[ $TESTS_FILE =~ 'weekly' ]]; then
   TEST_35D=true
 fi
 
-BL_DATE=20220517
+BL_DATE=20220329
 if [[ $MACHINE_ID = hera.* ]] || [[ $MACHINE_ID = orion.* ]] || [[ $MACHINE_ID = cheyenne.* ]] || [[ $MACHINE_ID = gaea.* ]] || [[ $MACHINE_ID = jet.* ]] || [[ $MACHINE_ID = s4.* ]]; then
   RTPWD=${RTPWD:-$DISKNM/NEMSfv3gfs/RRFS_dev-${BL_DATE}/${RT_COMPILER^^}}
 else
