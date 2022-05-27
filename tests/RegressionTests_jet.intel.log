@@ -1629,7 +1629,6 @@ Moving baseline 052 control_ras_debug files ....
 
 Test 052 control_ras_debug PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/control_diag_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/control_diag_debug
 Checking test 053 control_diag_debug results ....
@@ -1659,7 +1658,6 @@ Moving baseline 054 control_debug_p8 files ....
 
 Test 054 control_debug_p8 PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/control_thompson_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/control_thompson_debug
 Checking test 055 control_thompson_debug results ....
@@ -1673,7 +1671,6 @@ Moving baseline 055 control_thompson_debug files ....
   0: The maximum resident set size (KB)                   = 902708
 
 Test 055 control_thompson_debug PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/control_thompson_no_aero_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/control_thompson_no_aero_debug
@@ -1689,7 +1686,6 @@ Moving baseline 056 control_thompson_no_aero_debug files ....
 
 Test 056 control_thompson_no_aero_debug PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/control_thompson_debug_extdiag
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/control_thompson_extdiag_debug
 Checking test 057 control_thompson_extdiag_debug results ....
@@ -1703,7 +1699,6 @@ Moving baseline 057 control_thompson_extdiag_debug files ....
   0: The maximum resident set size (KB)                   = 932568
 
 Test 057 control_thompson_extdiag_debug PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/control_thompson_progcld_thompson_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/control_thompson_progcld_thompson_debug
@@ -1719,7 +1714,6 @@ Moving baseline 058 control_thompson_progcld_thompson_debug files ....
 
 Test 058 control_thompson_progcld_thompson_debug PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/fv3_regional_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/regional_debug
 Checking test 059 regional_debug results ....
@@ -1733,7 +1727,6 @@ Moving baseline 059 regional_debug files ....
  0: The maximum resident set size (KB)                   = 609188
 
 Test 059 regional_debug PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_control_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_control_debug
@@ -1749,7 +1742,6 @@ Moving baseline 060 rap_control_debug files ....
 
 Test 060 rap_control_debug PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_diag_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_diag_debug
 Checking test 061 rap_diag_debug results ....
@@ -1763,7 +1755,6 @@ Moving baseline 061 rap_diag_debug files ....
   0: The maximum resident set size (KB)                   = 995156
 
 Test 061 rap_diag_debug PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_cires_ugwp_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_cires_ugwp_debug
@@ -1779,7 +1770,6 @@ Moving baseline 062 rap_cires_ugwp_debug files ....
 
 Test 062 rap_cires_ugwp_debug PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_noah_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_noah_debug
 Checking test 063 rap_noah_debug results ....
@@ -1793,7 +1783,6 @@ Moving baseline 063 rap_noah_debug files ....
   0: The maximum resident set size (KB)                   = 910304
 
 Test 063 rap_noah_debug PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_rrtmgp_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_rrtmgp_debug
@@ -1809,7 +1798,6 @@ Moving baseline 064 rap_rrtmgp_debug files ....
 
 Test 064 rap_rrtmgp_debug PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_lndp_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_lndp_debug
 Checking test 065 rap_lndp_debug results ....
@@ -1823,7 +1811,6 @@ Moving baseline 065 rap_lndp_debug files ....
   0: The maximum resident set size (KB)                   = 907860
 
 Test 065 rap_lndp_debug PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_sfcdiff_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_sfcdiff_debug
@@ -1839,7 +1826,6 @@ Moving baseline 066 rap_sfcdiff_debug files ....
 
 Test 066 rap_sfcdiff_debug PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_flake_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_flake_debug
 Checking test 067 rap_flake_debug results ....
@@ -1853,7 +1839,6 @@ Moving baseline 067 rap_flake_debug files ....
   0: The maximum resident set size (KB)                   = 908296
 
 Test 067 rap_flake_debug PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_noah_sfcdiff_cires_ugwp_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_noah_sfcdiff_cires_ugwp_debug
@@ -1869,7 +1854,6 @@ Moving baseline 068 rap_noah_sfcdiff_cires_ugwp_debug files ....
 
 Test 068 rap_noah_sfcdiff_cires_ugwp_debug PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rap_progcld_thompson_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rap_progcld_thompson_debug
 Checking test 069 rap_progcld_thompson_debug results ....
@@ -1883,7 +1867,6 @@ Moving baseline 069 rap_progcld_thompson_debug files ....
   0: The maximum resident set size (KB)                   = 911588
 
 Test 069 rap_progcld_thompson_debug PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/rrfs_v1beta_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/rrfs_v1beta_debug
@@ -1899,7 +1882,6 @@ Moving baseline 070 rrfs_v1beta_debug files ....
 
 Test 070 rrfs_v1beta_debug PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/control_wam_debug
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/control_wam_debug
 Checking test 071 control_wam_debug results ....
@@ -1911,7 +1893,6 @@ Moving baseline 071 control_wam_debug files ....
   0: The maximum resident set size (KB)                   = 261884
 
 Test 071 control_wam_debug PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/hafs_regional_atm
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/hafs_regional_atm
@@ -1925,7 +1906,6 @@ Moving baseline 072 hafs_regional_atm files ....
 
 Test 072 hafs_regional_atm PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/hafs_regional_atm_thompson_gfdlsf
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/hafs_regional_atm_thompson_gfdlsf
 Checking test 073 hafs_regional_atm_thompson_gfdlsf results ....
@@ -1937,7 +1917,6 @@ Moving baseline 073 hafs_regional_atm_thompson_gfdlsf files ....
   0: The maximum resident set size (KB)                   = 1137184
 
 Test 073 hafs_regional_atm_thompson_gfdlsf PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/hafs_regional_atm_ocn
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/hafs_regional_atm_ocn
@@ -1955,7 +1934,6 @@ Moving baseline 074 hafs_regional_atm_ocn files ....
 
 Test 074 hafs_regional_atm_ocn PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/hafs_regional_atm_wav
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/hafs_regional_atm_wav
 Checking test 075 hafs_regional_atm_wav results ....
@@ -1969,7 +1947,6 @@ Moving baseline 075 hafs_regional_atm_wav files ....
   0: The maximum resident set size (KB)                   = 818144
 
 Test 075 hafs_regional_atm_wav PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/hafs_regional_atm_ocn_wav
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/hafs_regional_atm_ocn_wav
@@ -1987,7 +1964,6 @@ Moving baseline 076 hafs_regional_atm_ocn_wav files ....
 
 Test 076 hafs_regional_atm_ocn_wav PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/hafs_regional_docn
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/hafs_regional_docn
 Checking test 077 hafs_regional_docn results ....
@@ -2002,7 +1978,6 @@ Moving baseline 077 hafs_regional_docn files ....
   0: The maximum resident set size (KB)                   = 822224
 
 Test 077 hafs_regional_docn PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/hafs_regional_docn_oisst
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/hafs_regional_docn_oisst
@@ -2019,7 +1994,6 @@ Moving baseline 078 hafs_regional_docn_oisst files ....
 
 Test 078 hafs_regional_docn_oisst PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/hafs_regional_datm_cdeps
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/hafs_regional_datm_cdeps
 Checking test 079 hafs_regional_datm_cdeps results ....
@@ -2032,7 +2006,6 @@ Moving baseline 079 hafs_regional_datm_cdeps files ....
   0: The maximum resident set size (KB)                   = 858328
 
 Test 079 hafs_regional_datm_cdeps PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/datm_cdeps_control_cfsr
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/datm_cdeps_control_cfsr
@@ -2047,7 +2020,6 @@ Moving baseline 080 datm_cdeps_control_cfsr files ....
 
 Test 080 datm_cdeps_control_cfsr PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/datm_cdeps_control_gefs
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/datm_cdeps_control_gefs
 Checking test 081 datm_cdeps_control_gefs results ....
@@ -2061,7 +2033,6 @@ Moving baseline 081 datm_cdeps_control_gefs files ....
 
 Test 081 datm_cdeps_control_gefs PASS
 
-
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/datm_cdeps_stochy_gefs
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/datm_cdeps_stochy_gefs
 Checking test 082 datm_cdeps_stochy_gefs results ....
@@ -2074,7 +2045,6 @@ Moving baseline 082 datm_cdeps_stochy_gefs files ....
  0: The maximum resident set size (KB)                   = 626868
 
 Test 082 datm_cdeps_stochy_gefs PASS
-
 
 baseline dir = /lfs4/BMC/wrfruc/RT/NEMSfv3gfs/RRFS_dev-20220405/INTEL/datm_cdeps_bulk_cfsr
 working dir  = /mnt/lfs1/BMC/wrfruc/smirnova/RT_RUNDIRS/Tanya.Smirnova/FV3_RT/rt_140933/datm_cdeps_bulk_cfsr
