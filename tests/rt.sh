@@ -28,6 +28,11 @@ usage() {
 
 [[ $# -eq 0 ]] && usage
 
+# option to set local values with a config file
+if [ -d "$config_path" ]; then
+    source $config_path/local_vars.sh
+fi
+
 rt_single() {
   local compile_line=''
   local run_line=''
@@ -255,7 +260,7 @@ elif [[ $MACHINE_ID = hera.* ]]; then
   QUEUE=batch
   COMPILE_QUEUE=batch
 
-  #ACCNR="${ACCNR:-fv3-cpu}
+  ACCNR="${ACCNR:-fv3-cpu}"
   PARTITION=
   dprefix=${dprefix:-/scratch1/NCEPDEV}
   DISKNM=/scratch2/BMC/wrfruc/RT
@@ -486,7 +491,7 @@ if [[ $TESTS_FILE =~ '35d' ]] || [[ $TESTS_FILE =~ 'weekly' ]]; then
   TEST_35D=true
 fi
 
-BL_DATE=20220630
+BL_DATE="${BL_DATE:-20220630}"
 if [[ $MACHINE_ID = hera.* ]] || [[ $MACHINE_ID = orion.* ]] || [[ $MACHINE_ID = cheyenne.* ]] || [[ $MACHINE_ID = gaea.* ]] || [[ $MACHINE_ID = jet.* ]] || [[ $MACHINE_ID = s4.* ]]; then
   RTPWD=${RTPWD:-$DISKNM/NEMSfv3gfs/gsl-develop-${BL_DATE}/${RT_COMPILER^^}}
 else
