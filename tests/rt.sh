@@ -262,11 +262,11 @@ elif [[ $MACHINE_ID = hera.* ]]; then
 
   ACCNR="${ACCNR:-fv3-cpu}"
   PARTITION=
-  dprefix=${dprefix:-/scratch1/NCEPDEV}
-  DISKNM=${DISKNM:-/scratch2/BMC/wrfruc/RT}
+  dprefix="${dprefix:-/scratch1/NCEPDEV}"
+  DISKNM="${DISKNM:-/scratch2/BMC/wrfruc/RT}"
   #DISKNM=$dprefix/nems/emc.nemspara/RT
-  STMP=$dprefix/stmp4
-  PTMP=$dprefix/stmp2
+  STMP="${STMP:-$dprefix/stmp4}"
+  PTMP="${PTMP:-$dprefix/stmp2}"
 
   SCHEDULER=slurm
   cp fv3_conf/fv3_slurm.IN_hera fv3_conf/fv3_slurm.IN
@@ -314,10 +314,10 @@ elif [[ $MACHINE_ID = jet.* ]]; then
   COMPILE_QUEUE=batch
   ACCNR="${ACCNR:-h-nems}"
   PARTITION=xjet
-  DISKNM=/lfs4/BMC/wrfruc/RT
-  dprefix=${dprefix:-/lfs4/HFIP/$ACCNR/$USER}
-  STMP=${STMP:-$dprefix/RT_BASELINE}
-  PTMP=${PTMP:-$dprefix/RT_RUNDIRS}
+  DISKNM="${DISKNM:-/lfs4/BMC/wrfruc/RT}"
+  dprefix="${dprefix:-/lfs4/HFIP/$ACCNR/$USER}"
+  STMP="${STMP:-$dprefix/RT_BASELINE}"
+  PTMP="${PTMP:-$dprefix/RT_RUNDIRS}"
 
   SCHEDULER=slurm
   cp fv3_conf/fv3_slurm.IN_jet fv3_conf/fv3_slurm.IN
