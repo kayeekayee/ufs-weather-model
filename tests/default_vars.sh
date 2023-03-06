@@ -779,7 +779,7 @@ if [[ $MACHINE_ID = gaea.* ]]; then
   WLCLK_dflt=180
 fi
 if [[ $MACHINE_ID = jet.* ]]; then
-  WLCLK_dflt=45
+  WLCLK_dflt=60
 fi
 
 export WLCLK=$WLCLK_dflt
