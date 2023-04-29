@@ -1,4 +1,4 @@
-###############################################################################
+#d##############################################################################
 ### CMEPS compiler flags
 ###############################################################################
 
@@ -42,6 +42,7 @@ list(APPEND _mediator_files
   CMEPS/mediator/med_internalstate_mod.F90
   CMEPS/mediator/med_phases_profile_mod.F90
   CMEPS/mediator/esmFldsExchange_hafs_mod.F90
+  CMEPS/mediator/esmFldsExchange_hafs_mom6_mod.F90
   CMEPS/mediator/med_phases_prep_rof_mod.F90
   CMEPS/mediator/esmFldsExchange_cesm_mod.F90
   CMEPS/mediator/med_merge_mod.F90
@@ -62,6 +63,7 @@ list(APPEND _mediator_files
   CMEPS/mediator/med_io_mod.F90
   CMEPS/mediator/med_diag_mod.F90
   CMEPS/mediator/med_phases_post_atm_mod.F90
+  CMEPS/mediator/med_phases_post_dat_mod.F90
   CMEPS/mediator/med_phases_post_ice_mod.F90
   CMEPS/mediator/med_phases_post_ocn_mod.F90
   CMEPS/mediator/med_phases_post_lnd_mod.F90

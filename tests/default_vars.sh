@@ -280,6 +280,7 @@ fi
 WLCLK_dflt=30
 
 export WLCLK=$WLCLK_dflt
+export ATM_DATM=false
 
 export_fv3 ()
 {
@@ -1238,4 +1239,23 @@ export NFHMAX_HF=-1
 export NFHOUT_HF=3
 export NSOUT=-1
 export OUTPUT_FH=-1
+}
+export_hafs_regional_mom6 ()
+{
+export ATM_DATM=true
+# model_configure
+export SYEAR=2020
+export SMONTH=08
+export SDAY=25
+export SHOUR=12
+export SECS=`expr $SHOUR \* 3600`
+export FHMAX=3
+export DT_ATMOS=900
+export CPL=.true.
+export RESTART_INTERVAL=0
+export FHROT=0
+export OUTPUT_HISTORY=.true.
+export MESH_WAV=hafs_mom6_mesh.nc
+export CPLMODE=hafs_mom6
+export NEMS_CONFIGURE=nems.configure.hafs_atm_mom6.IN
 }
