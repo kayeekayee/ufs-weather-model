@@ -23,7 +23,7 @@ load(pathJoin("ncarcompilers", ncarcompilers_ver))
 
 unload("netcdf")
 
-prepend_path("MODULEPATH", "/glade/work/epicufsrt/GMTB/tools/intel/2022.1/hpc-stack-v1.2.0_6eb6/modulefiles/stack")
+prepend_path("MODULEPATH", "/glade/work/epicufsrt/contrib/hpc-stack/intel2022.1/modulefiles/stack")
 
 hpc_ver=os.getenv("hpc_ver") or "1.2.0"
 load(pathJoin("hpc", hpc_ver))
@@ -33,6 +33,9 @@ load(pathJoin("hpc-intel", hpc_intel_ver))
 
 hpc_mpt_ver=os.getenv("hpc_mpt_ver") or "2.25"
 load(pathJoin("hpc-mpt", hpc_mpt_ver))
+
+scotch_ver=os.getenv("scotch_ver") or "7.0.3"
+load(pathJoin("scotch", scotch_ver))
 
 load("ufs_common")
 

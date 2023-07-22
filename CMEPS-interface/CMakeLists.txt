@@ -1,4 +1,4 @@
-###############################################################################
+#d##############################################################################
 ### CMEPS compiler flags
 ###############################################################################
 
@@ -30,7 +30,14 @@ list(APPEND _nems_util_files
   CMEPS/ufs/glc_elevclass_mod.F90
   CMEPS/ufs/ufs_kind_mod.F90
   CMEPS/ufs/perf_mod.F90
-  CMEPS/ufs/ufs_const_mod.F90)
+  CMEPS/ufs/ufs_const_mod.F90
+  ${PROJECT_SOURCE_DIR}/CDEPS-interface/CDEPS/share/shr_abort_mod.F90
+  ${PROJECT_SOURCE_DIR}/CDEPS-interface/CDEPS/share/shr_strconvert_mod.F90
+  ${PROJECT_SOURCE_DIR}/CDEPS-interface/CDEPS/share/shr_log_mod.F90
+  ${PROJECT_SOURCE_DIR}/CDEPS-interface/CDEPS/share/shr_sys_mod.F90
+  ${PROJECT_SOURCE_DIR}/CDEPS-interface/CDEPS/share/shr_kind_mod.F90
+  ${PROJECT_SOURCE_DIR}/CDEPS-interface/ufs/cdeps_share/shr_assert_mod.F90
+  ${PROJECT_SOURCE_DIR}/CDEPS-interface/ufs/cdeps_share/shr_infnan_mod.F90)
 
 list(APPEND _mediator_files
   CMEPS/mediator/med_phases_restart_mod.F90
@@ -42,6 +49,7 @@ list(APPEND _mediator_files
   CMEPS/mediator/med_internalstate_mod.F90
   CMEPS/mediator/med_phases_profile_mod.F90
   CMEPS/mediator/esmFldsExchange_hafs_mod.F90
+  CMEPS/mediator/esmFldsExchange_hafs_mom6_mod.F90
   CMEPS/mediator/med_phases_prep_rof_mod.F90
   CMEPS/mediator/esmFldsExchange_cesm_mod.F90
   CMEPS/mediator/med_merge_mod.F90
@@ -62,6 +70,7 @@ list(APPEND _mediator_files
   CMEPS/mediator/med_io_mod.F90
   CMEPS/mediator/med_diag_mod.F90
   CMEPS/mediator/med_phases_post_atm_mod.F90
+  CMEPS/mediator/med_phases_post_dat_mod.F90
   CMEPS/mediator/med_phases_post_ice_mod.F90
   CMEPS/mediator/med_phases_post_ocn_mod.F90
   CMEPS/mediator/med_phases_post_lnd_mod.F90
@@ -100,7 +109,7 @@ if(CMEPS_AOFLUX)
     ### Trigger ccpp_prebuild.py script to connect host model with CCPP physics
     message("Calling CCPP code generator (ccpp_prebuild.py) for suites ${_ccpp_suites_arg} ...")
     execute_process(
-                    COMMAND ${Python_EXECUTABLE} 
+                    COMMAND ${Python_EXECUTABLE}
                     "${FV3_PATH}/ccpp/framework/scripts/ccpp_prebuild.py"
                     "--config=CMEPS/ufs/ccpp/config/ccpp_prebuild_config.py"
                     "--builddir=${CMAKE_CURRENT_BINARY_DIR}"

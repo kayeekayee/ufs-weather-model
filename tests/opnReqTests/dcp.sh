@@ -13,9 +13,10 @@ if [[ $application == 'global' ]]; then
   fi
 elif [[ $application == 'regional' ]]; then
   if [[ $CI_TEST == 'true' ]]; then
-    INPES=10
-    JNPES=3
+    INPES=5
+    JNPES=12
     NTILES=1
+    WRTTASK_PER_GROUP=10
     TASKS=$((INPES*JNPES*NTILES + WRITE_GROUP*WRTTASK_PER_GROUP))
     NODES=$(((TASKS+TPN-1)/TPN))
   else
@@ -36,7 +37,17 @@ elif [[ $application == 'cpld' ]]; then
     INPES=$JNPES
     JNPES=$temp
   fi
+elif [[ $application == 'atmw' ]]; then
+  if [[ $CI_TEST == 'true' ]]; then
+    INPES=3
+    JNPES=1
+    TASKS=$((INPES*JNPES + WRITE_GROUP*WRTTASK_PER_GROUP))
+  else
+    temp=$INPES
+    INPES=$JNPES
+    JNPES=$temp
+  fi
 fi
 
-(test $CI_TEST == 'true') && source $PATHRT/opnReqTests/cmp_proc_bind.sh
+
 source $PATHRT/opnReqTests/wrt_env.sh

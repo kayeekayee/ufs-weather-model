@@ -20,8 +20,8 @@ if [[ $application == 'global' ]]; then
   fi
 
 elif [[ $application == 'regional' ]]; then
-  echo "Regional application not yet implemented for restart"
-  exit 1
+  echo "Regional application not yet implemented for restart, skipping..."
+  continue 1
 elif [[ $application == 'cpld' ]]; then
   FHROT=$(( FHMAX/2 ))
 
@@ -31,7 +31,16 @@ elif [[ $application == 'cpld' ]]; then
   MOM6_RESTART_SETTING="r"
   RESTART_N=$(( FHMAX - FHROT ))
   RESTART_FILE_PREFIX="${SYEAR}${SMONTH}${SDAY}.$(printf "%02d" $(( SHOUR + FHROT  )))0000"
-  RESTART_FILE_SUFFIX_HRS="${SYEAR}-${SMONTH}-${SDAY}-$(printf "%02d" $(( SHOUR + FHROT )))"
+  RESTART_FILE_SUFFIX_SECS="${SYEAR}-${SMONTH}-${SDAY}-$(printf "%05d" $(( (SHOUR + FHROT)* 3600 )))"
+  RUN_BEG="${SYEAR}${SMONTH}${SDAY} $(printf "%02d" $(( ${FHROT}+${SHOUR} )))0000"
+elif [[ $application == 'atmw' ]]; then
+  FHROT=$(( FHMAX/2 ))
+  WW3RSTDTHR=6
+  DT_2_RST="$(printf "%02d" $(( ${WW3RSTDTHR}*3600 )))"
+  RUNTYPE='continue'
+  USE_RESTART_TIME='.true.'
+  RESTART_N=$(( FHMAX - FHROT ))
+  RESTART_FILE_PREFIX="${SYEAR}${SMONTH}${SDAY}.$(printf "%02d" $(( SHOUR + FHROT  )))0000"
   RESTART_FILE_SUFFIX_SECS="${SYEAR}-${SMONTH}-${SDAY}-$(printf "%05d" $(( (SHOUR + FHROT)* 3600 )))"
   RUN_BEG="${SYEAR}${SMONTH}${SDAY} $(printf "%02d" $(( ${FHROT}+${SHOUR} )))0000"
 fi
@@ -55,11 +64,12 @@ LIST_FILES=$(echo -n $LIST_FILES | sed -E "s/phyf0[0-9][0-9]/phyf0$FHMAX_2D/g" \
 LIST_FILES=$(echo $LIST_FILES | xargs -n1 | sort -u | xargs)
 
 
-(test $CI_TEST == 'true') && source $PATHRT/opnReqTests/cmp_proc_bind.sh
+
 source $PATHRT/opnReqTests/wrt_env.sh
 
 cat <<EOF >>${RUNDIR_ROOT}/opnreq_test${RT_SUFFIX}.env
 export FHROT=${FHROT}
+export DT_2_RST=${DT_2_RST:-}
 export RESTART_FILE_PREFIX=${RESTART_FILE_PREFIX}
 export NSTF_NAME=${NSTF_NAME}
 export CICERUNTYPE=${CICERUNTYPE:-}
@@ -67,7 +77,6 @@ export RUNTYPE=${RUNTYPE:-}
 export USE_RESTART_TIME=${USE_RESTART_TIME:-}
 export MOM6_RESTART_SETTING=${MOM6_RESTART_SETTING:-}
 export RESTART_N=${RESTART_N:-}
-export RESTART_FILE_SUFFIX_HRS=${RESTART_FILE_SUFFIX_HRS:-}
 export RESTART_FILE_SUFFIX_SECS=${RESTART_FILE_SUFFIX_SECS:-}
 export RUN_BEG="${RUN_BEG:-}"
 export OUT_BEG="${RUN_BEG:-}"

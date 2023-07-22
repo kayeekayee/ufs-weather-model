@@ -763,6 +763,8 @@
        canonical_units: N m-2
      - standard_name: inst_laten_heat_flx
        canonical_units: N m-2
+     - standard_name: inst_evap_rate
+       canonical_units: kg m-2 s-1
      - standard_name: inst_tracer_mass_frac
        canonical_units: 1
      - standard_name: inst_tracer_up_surface_flx
@@ -1156,3 +1158,67 @@
        alias: mean_sensi_heat_flx_lnd_to_atm
        canonical_units: W m-2
        description: land export to atm - atm/lnd sensible heat flux
+     #
+     #-----------------------------------
+     # section: data atmosphere export
+     #-----------------------------------
+     #
+     - standard_name: Foxx_rain
+       alias: mean_prec_rate
+       canonical_units: kg m-2 s-1
+       description: ocean import
+     #
+     - standard_name: Faxd_rain
+       alias: mean_prec_rate
+       canonical_units: kg m-2 s-1
+       description: data atmosphere export
+     #
+     - standard_name: Faxd_swndf
+       alias: mean_down_sw_ir_dif_flx_dat
+       canonical_units: W m-2
+       description: data atmosphere export - mean surface downward nir diffuse flux
+     #
+     - standard_name: Faxd_swndr
+       alias: mean_down_sw_ir_dir_flx_dat
+       canonical_units: W m-2
+       description: data atmosphere export - mean surface downward nir direct flux
+     #
+     - standard_name: Faxd_swvdf
+       alias: mean_down_sw_vis_dif_flx_dat
+       canonical_units: W m-2
+       description: data atmosphere export - mean surface downward uv+vis diffuse flux
+     #
+     - standard_name: Faxd_swvdr
+       alias: mean_down_sw_vis_dir_flx_dat
+       canonical_units: W m-2
+       description: data atmosphere export - mean surface downward uv+visvdirect flux
+     #
+     - standard_name: Faxd_taux
+       alias: mean_zonal_moment_flx_dat
+       canonical_units: N m-2
+       description: data atmosphere export- zonal component of momentum flux
+     #
+     - standard_name: Faxd_tauy
+       alias: mean_merid_moment_flx_dat
+       canonical_units: N m-2
+       description: data atmosphere export - meridional component of momentum flux
+     #
+     - standard_name: Faxd_lat
+       alias: mean_laten_heat_flx_dat
+       canonical_units: W m-2
+       description: data atmosphere export - latent heat flux
+     #
+     - standard_name: Faxd_sen
+       alias: mean_sensi_heat_flx_dat
+       canonical_units: W m-2
+       description: data atmosphere export
+
+     - standard_name: Sd_pslv
+       alias: inst_pres_height_surface
+       canonical_units: Pa
+       description: data atmosphere export - instantaneous pressure land and sea surface
+
+     - standard_name: Faxd_lwnet
+       alias: mean_net_lw_flx_dat
+       canonical_units: W m-2
+       description: data atmosphere export - mean net longwave flux from atm

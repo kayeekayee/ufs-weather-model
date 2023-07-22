@@ -195,6 +195,7 @@
     iopt_snf = 4
     iopt_stc = 1
     iopt_trs = 2
+    iopt_diag = 2
     iopt_tbot = 2
     iovr = 3
     isol = 2
@@ -214,7 +215,7 @@
     lwhtr = .true.
     n_var_lndp = 0
     n_var_spp = @[N_VAR_SPP]
-    nsradar_reset = 3600
+    nsfullradar_diag = 3600
     nst_anl = .true.
     nstf_name = 2, 1, 0, 0, 0
     oz_phys = @[OZ_PHYS_OLD]
