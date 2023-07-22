@@ -18,8 +18,8 @@
   path = CMEPS-interface/CMEPS
   #url = https://github.com/NOAA-EMC/CMEPS
   #branch = emc/develop
-  url = https://github.com/binli2337/CMEPS
-  branch = feature/update_hafs_202307
+  url = https://github.com/hafs-community/CMEPS
+  branch = support/hafs.v1.1.0
 [submodule "HYCOM"]
   path = HYCOM-interface/HYCOM
   url = https://github.com/NOAA-EMC/HYCOM-src
@@ -36,8 +36,8 @@
   path = CDEPS-interface/CDEPS
   #url = https://github.com/NOAA-EMC/CDEPS
   #branch = develop
-  url = https://github.com/binli2337/CDEPS
-  branch = feature/update_hafs
+  url = https://github.com/hafs-community/CDEPS
+  branch = support/hafs.v1.1.0
 [submodule "GOCART"]
   path = GOCART
   url = https://github.com/GEOS-ESM/GOCART
