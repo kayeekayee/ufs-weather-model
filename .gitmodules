@@ -1,7 +1,7 @@
 [submodule "FV3"]
   path = FV3
-  url = https://github.com/NOAA-GSL/fv3atm
-  branch = global-workflow
+  url = https://github.com/kayeekayee/fv3atm
+  branch = 2024aug4_2527c11
 [submodule "WW3"]
   path = WW3
   url = https://github.com/NOAA-EMC/WW3
