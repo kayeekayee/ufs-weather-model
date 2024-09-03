@@ -20,12 +20,12 @@
   branch = emc/develop
 [submodule "HYCOM"]
   path = HYCOM-interface/HYCOM
-  url = https://github.com/NOAA-EMC/HYCOM-src
+  url = https://github.com/kayeekayee/HYCOM-src.git
   branch = emc/develop
 [submodule "MOM6"]
   path = MOM6-interface/MOM6
-  url = https://github.com/NOAA-EMC/MOM6
-  branch = dev/emc
+  url = https://github.com/kayeekayee/MOM6.git
+  branch = mom6_b32aea7
 [submodule "CICE"]
   path = CICE-interface/CICE
   url = https://github.com/NOAA-EMC/CICE
