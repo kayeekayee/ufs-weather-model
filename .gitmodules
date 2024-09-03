@@ -16,8 +16,8 @@
   branch = develop
 [submodule "CMEPS"]
   path = CMEPS-interface/CMEPS
-  url = https://github.com/NOAA-EMC/CMEPS
-  branch = emc/develop
+  url = https://github.com/kayeekayee/CMEPS.git
+  branch = CMEPS_2d837b
 [submodule "HYCOM"]
   path = HYCOM-interface/HYCOM
   url = https://github.com/kayeekayee/HYCOM-src.git
@@ -28,12 +28,12 @@
   branch = mom6_b32aea7
 [submodule "CICE"]
   path = CICE-interface/CICE
-  url = https://github.com/NOAA-EMC/CICE
-  branch = emc/develop
+  url = https://github.com/kayeekayee/CICE.git
+  branch = CICE_9452de8c
 [submodule "CDEPS"]
   path = CDEPS-interface/CDEPS
-  url = https://github.com/NOAA-EMC/CDEPS
-  branch = develop
+  url = https://github.com/kayeekayee/CDEPS
+  branch = CDEPS_fbdf684
 [submodule "GOCART"]
   path = GOCART
   url = https://github.com/GEOS-ESM/GOCART
