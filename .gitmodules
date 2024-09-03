@@ -44,5 +44,5 @@
   branch = develop
 [submodule "NOAHMP"]
   path = NOAHMP-interface/noahmp
-  url = https://github.com/NOAA-EMC/noahmp
-  branch = develop
+  url = https://github.com/kayeekayee/noahmp.git
+  branch = noahmp_ec38ea3d
