@@ -1,14 +1,14 @@
 [submodule "FV3"]
   path = FV3
-  url = https://github.com/kayeekayee/fv3atm
-  branch = 2024aug4_2527c11
+  url = https://github.com/NOAA-GSL/fv3atm
+  branch = global-workflow
 [submodule "WW3"]
   path = WW3
-  url = https://github.com/kayeekayee/WW3.git
-  branch = ww3_d9b3172
+  url = https://github.com/NOAA-EMC/WW3
+  branch = dev/ufs-weather-model
 [submodule "stochastic_physics"]
   path = stochastic_physics
-  url = https://github.com/kayeekayee/stochastic_physics.git
+  url = https://github.com/NOAA-PSL/stochastic_physics
   branch = master
 [submodule "CMakeModules"]
   path = CMakeModules
@@ -16,24 +16,24 @@
   branch = develop
 [submodule "CMEPS"]
   path = CMEPS-interface/CMEPS
-  url = https://github.com/kayeekayee/CMEPS.git
-  branch = CMEPS_2d837b
+  url = https://github.com/NOAA-EMC/CMEPS
+  branch = emc/develop
 [submodule "HYCOM"]
   path = HYCOM-interface/HYCOM
-  url = https://github.com/kayeekayee/HYCOM-src.git
+  url = https://github.com/NOAA-EMC/HYCOM-src
   branch = emc/develop
 [submodule "MOM6"]
   path = MOM6-interface/MOM6
-  url = https://github.com/kayeekayee/MOM6.git
-  branch = mom6_b32aea7
+  url = https://github.com/NOAA-EMC/MOM6
+  branch = dev/emc
 [submodule "CICE"]
   path = CICE-interface/CICE
-  url = https://github.com/kayeekayee/CICE.git
-  branch = CICE_9452de8c
+  url = https://github.com/NOAA-EMC/CICE
+  branch = emc/develop
 [submodule "CDEPS"]
   path = CDEPS-interface/CDEPS
-  url = https://github.com/kayeekayee/CDEPS
-  branch = CDEPS_fbdf684
+  url = https://github.com/NOAA-EMC/CDEPS
+  branch = develop
 [submodule "GOCART"]
   path = GOCART
   url = https://github.com/GEOS-ESM/GOCART
@@ -44,5 +44,5 @@
   branch = develop
 [submodule "NOAHMP"]
   path = NOAHMP-interface/noahmp
-  url = https://github.com/kayeekayee/noahmp.git
-  branch = noahmp_ec38ea3d
+  url = https://github.com/NOAA-EMC/noahmp
+  branch = develop
