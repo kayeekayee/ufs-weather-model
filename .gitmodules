@@ -16,7 +16,7 @@
   branch = develop
 [submodule "CMEPS"]
   path = CMEPS-interface/CMEPS
-  url = https://github.com/NOAA-EMC/CMEPS
+  url = https://github.com/kayeekayee/CMEPS.git
   branch = emc/develop
 [submodule "HYCOM"]
   path = HYCOM-interface/HYCOM
@@ -24,15 +24,15 @@
   branch = emc/develop
 [submodule "MOM6"]
   path = MOM6-interface/MOM6
-  url = https://github.com/NOAA-EMC/MOM6
+  url = https://github.com/kayeekayee/MOM6.git 
   branch = dev/emc
 [submodule "CICE"]
   path = CICE-interface/CICE
-  url = https://github.com/NOAA-EMC/CICE
-  branch = develop
+  url = https://github.com/kayeekayee/CICE.git
+  branch = 2024Dec11_ff7fd7
 [submodule "CDEPS"]
   path = CDEPS-interface/CDEPS
-  url = https://github.com/NOAA-EMC/CDEPS
+  url = https://github.com/kayeekayee/CDEPS.git
   branch = develop
 [submodule "GOCART"]
   path = GOCART
@@ -44,7 +44,7 @@
   branch = develop
 [submodule "NOAHMP"]
   path = NOAHMP-interface/noahmp
-  url = https://github.com/NOAA-EMC/noahmp
+  url = https://github.com/kayeekayee/noahmp.git
   branch = develop
 [submodule "LM4-driver"]
   path = LM4-driver
