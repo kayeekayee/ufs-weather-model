@@ -1,128 +1,143 @@
-cmake_minimum_required(VERSION 3.10)
-include(ExternalProject)
-include(FetchContent)
-
-set(DISABLE_FoX OFF CACHE BOOL "Disable FoX library to process XML files.")
-message("DISABLE_FoX = ${DISABLE_FoX}")
-if(DISABLE_FoX)
-  add_definitions(-DDISABLE_FoX)
-endif()
-
-if (DEFINED CIMEROOT)
-  message("Using CIME in ${CIMEROOT} with compiler ${COMPILER}")
-  include(${CASEROOT}/Macros.cmake)
-  if (${PIO_VERSION} LESS 2)
-    message( FATAL_ERROR "Version 2 of the PIO library required")
+# CDEPS compiler flags
+if(CMAKE_Fortran_COMPILER_ID MATCHES "GNU")
+  set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -g -fbacktrace -ffree-line-length-none")
+  #Set CPP defintions for the ufs/cdeps_share target library
+  list(APPEND CDEPS_SHARE_DEFS "CPRGNU")
+  if(${CMAKE_Fortran_COMPILER_VERSION} VERSION_GREATER_EQUAL 10)
+    set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -fallow-argument-mismatch -fallow-invalid-boz")
   endif()
-  if (MPILIB STREQUAL mpi-serial)
-    set(CMAKE_Fortran_COMPILER ${SFC})
-    set(CMAKE_C_COMPILER ${SCC})
-  else()
-    set(CMAKE_Fortran_COMPILER ${MPIFC})
-    set(CMAKE_C_COMPILER ${MPICC})
-  endif()
-  set(CMAKE_Fortran_FLAGS "${FFLAGS} ${CPPDEFS} -I${LIBROOT}/include -I${LIBROOT}/nuopc/esmf/${NINST_VALUE}/include")
-  add_compile_definitions(CESMCOUPLED)
-  list(APPEND CMAKE_MODULE_PATH ${SRC_ROOT}/components/cdeps/cmake)
-  set(FOX_ROOT ${SRC_ROOT}/components/cdeps/fox)
+  set(CMAKE_Fortran_FLAGS_RELEASE "-O2")
+  set(CMAKE_Fortran_FLAGS_DEBUG "-O0 -fcheck=bounds -ffpe-trap=invalid,zero,overflow,underflow" )
+elseif(CMAKE_Fortran_COMPILER_ID MATCHES "Intel")
+  set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -g -traceback")
+  set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -O -assume realloc_lhs")
+  set(CMAKE_Fortran_FLAGS_RELEASE "-O2 -fp-model precise")
+  set(CMAKE_Fortran_FLAGS_DEBUG "-O0 -check -check noarg_temp_created -check nopointer -fpe0 -ftrapuv -init=snan,arrays")
+  #Set CPP defintions for the ufs/cdeps_share target library
+  list(APPEND CDEPS_SHARE_DEFS "CPRINTEL")
 else()
-  set(BLD_STANDALONE TRUE)
-  project(NUOPC_DATA_MODELS LANGUAGES Fortran VERSION 0.1)
-  list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
-  if(NOT DISABLE_FoX)
-    set(FOX_ROOT ${CMAKE_SOURCE_DIR}/fox)
-  endif()
-endif()
-message("CMAKE_MODULE_PATH is ${CMAKE_MODULE_PATH}, CMAKE_Fortran_COMPILER is ${CMAKE_Fortran_COMPILER}")
-enable_language(Fortran)
-
-if (TARGET esmf)
-  message("Target esmf is already found. Skip find_package ...")
-else()
-  find_package(ESMF REQUIRED)
+  message(WARNING "Fortran compiler with ID ${CMAKE_Fortran_COMPILER_ID} will be used with CMake default options")
 endif()
 
-option(WERROR "add the -Werror flag to compiler (works with gcc and intel)" OFF)
+# Too many files to list, so include them via this file
+include("cdeps_files.cmake")
 
+# CDEPS/share
+add_library(share OBJECT ${cdeps_share_files} ${ufs_cdeps_share_files})
+set_target_properties(share PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(share PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ufs/cdeps_share)
+target_include_directories(share PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_compile_definitions(share PRIVATE ${CDEPS_SHARE_DEFS})
+target_link_libraries(share PRIVATE esmf)
 
-if (DEFINED ENV{PIO_ROOT})
-  message("PIO_ROOT is $ENV{PIO_ROOT}")
-else()
-  if (DEFINED PIO)
-    set(PIO_PATH ${PIO})
-  else()
-    set(PIO_PATH $ENV{PIO})
-  endif()
-  find_package(PIO REQUIRED COMPONENT C Fortran PATH ${PIO_PATH})
-endif()
+# CDEPS/streams
+add_library(streams OBJECT ${cdeps_streams_files})
+add_dependencies(streams share)
+set_target_properties(streams PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(streams PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_compile_definitions(streams PUBLIC "DISABLE_FoX")
+target_link_libraries(streams PRIVATE share)
+target_link_libraries(streams PRIVATE esmf PIO::PIO_Fortran)
 
-if (NOT DEFINED MPILIB OR NOT ${MPILIB} STREQUAL "mpi-serial")
-  find_package(MPI REQUIRED)
-endif()
+# CDEPS/dshr
+add_library(dshr OBJECT ${cdeps_dshr_files})
+add_dependencies(dshr share streams)
+set_target_properties(dshr PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(dshr PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_link_libraries(dshr PRIVATE share streams)
+target_link_libraries(dshr PRIVATE esmf PIO::PIO_Fortran)
 
-if(BLD_STANDALONE)
-  add_subdirectory(share)
-  list(APPEND EXTRA_LIBS cdeps_share)
-endif()
-if("${COMPILER}" STREQUAL "nag")
-  set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -D__NAG__")
-endif()
-add_subdirectory(streams)
-add_subdirectory(dshr)
+# CDEPS/datm
+add_library(datm OBJECT ${cdeps_datm_files})
+add_dependencies(datm share streams dshr)
+set_target_properties(datm PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(datm PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_link_libraries(datm PRIVATE dshr share streams)
+target_link_libraries(datm PRIVATE esmf PIO::PIO_Fortran)
 
-if(NOT DISABLE_FoX)
-  add_subdirectory(fox)
+# CDEPS/dice
+add_library(dice OBJECT ${cdeps_dice_files})
+add_dependencies(dice share streams dshr)
+set_target_properties(dice PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(dice PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_link_libraries(dice PRIVATE dshr share streams)
+target_link_libraries(dice PRIVATE esmf)
 
-  target_include_directories(streams PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/fox/include>
-                                            $<INSTALL_INTERFACE:mod>)
-  target_include_directories(dshr PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/fox/include>
-                                         $<INSTALL_INTERFACE:mod>)
-endif()
+# CDEPS/dlnd
+add_library(dlnd OBJECT ${cdeps_dlnd_files})
+add_dependencies(dlnd share streams dshr)
+set_target_properties(dlnd PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(dlnd PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_link_libraries(dlnd PRIVATE dshr share streams)
+target_link_libraries(dlnd PRIVATE esmf)
 
-target_include_directories(dshr PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/streams>
-                                       $<INSTALL_INTERFACE:mod>)
+# CDEPS/docn
+add_library(docn OBJECT ${cdeps_docn_files})
+add_dependencies(docn share streams dshr)
+set_target_properties(docn PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(docn PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_link_libraries(docn PRIVATE dshr share streams)
+target_link_libraries(docn PRIVATE esmf PIO::PIO_Fortran)
 
-foreach(COMP datm dice dglc dlnd docn drof dwav)
-  add_subdirectory("${COMP}")
-  if(BLD_STANDALONE)
-    target_include_directories(${COMP} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/share>
-                                            $<INSTALL_INTERFACE:mod>)
-  endif()
-  target_include_directories(${COMP} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/streams>
-                                            $<INSTALL_INTERFACE:mod>)
-  target_include_directories(${COMP} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/dshr>
-                                            $<INSTALL_INTERFACE:mod>)
+# CDEPS/drof
+add_library(drof OBJECT ${cdeps_drof_files})
+add_dependencies(drof share streams dshr)
+set_target_properties(drof PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(drof PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_link_libraries(drof PRIVATE dshr share streams)
+target_link_libraries(drof PRIVATE esmf)
 
-  if(WERROR)
-     target_compile_options(${COMP} PRIVATE -Werror --warn-no-unused-dummy-argument --warn-no-missing-include-dirs)
-  endif()
-  install(TARGETS ${COMP}
-          EXPORT  ${COMP}
-          ARCHIVE DESTINATION lib
-          LIBRARY DESTINATION lib
-          COMPONENT Library)
-  install(EXPORT      ${COMP}
-          DESTINATION lib/cmake)
-endforeach(COMP)
+# CDEPS/dwav
+add_library(dwav OBJECT ${cdeps_dwav_files})
+add_dependencies(dwav share streams dshr)
+set_target_properties(dwav PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(dwav PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_link_libraries(dwav PRIVATE dshr share streams)
+target_link_libraries(dwav PRIVATE esmf)
 
-foreach(DEPS streams dshr cdeps_share FoX_dom FoX_wxml FoX_sax FoX_common FoX_utils FoX_fsys)
-  if(DISABLE_FoX AND ${DEPS} MATCHES "^FoX")
-     continue()
-  endif()
-  if(NOT BLD_STANDALONE AND ${DEPS} STREQUAL "cdeps_share")
-     continue()
-  endif()
-  string(SUBSTRING ${DEPS} 0 3 fox)
-  if(WERROR AND NOT ${fox} STREQUAL "FoX")
-     message("Adding Werror flag to ${DEPS} (fox = ${fox})")
-     target_compile_options(${DEPS} PRIVATE -Werror --warn-no-unused-dummy-argument --warn-no-missing-include-dirs)
-  endif()
+# CDEPS/dglc
+add_library(dglc OBJECT ${cdeps_dglc_files})
+add_dependencies(dglc share streams dshr)
+set_target_properties(dglc PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
+target_include_directories(dglc PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>)
+target_link_libraries(dglc PRIVATE dshr share streams)
+target_link_libraries(dglc PRIVATE esmf PIO::PIO_Fortran)
 
-  install(TARGETS ${DEPS}
-          EXPORT  ${DEPS}
-          ARCHIVE DESTINATION lib
-          LIBRARY DESTINATION lib
-          COMPONENT Library)
-  install(EXPORT      ${DEPS}
-          DESTINATION lib/cmake)
-endforeach(DEPS)
+# CDEPS
+add_library(cdeps STATIC $<TARGET_OBJECTS:share>
+                         $<TARGET_OBJECTS:streams>
+                         $<TARGET_OBJECTS:dshr>
+                         $<TARGET_OBJECTS:datm>
+                         $<TARGET_OBJECTS:dice>
+                         $<TARGET_OBJECTS:dlnd>
+                         $<TARGET_OBJECTS:docn>
+                         $<TARGET_OBJECTS:drof>
+                         $<TARGET_OBJECTS:dwav>
+                         $<TARGET_OBJECTS:dglc>)
+add_library(cdeps::cdeps ALIAS cdeps)
+target_include_directories(cdeps PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/mod>
+                                        $<INSTALL_INTERFACE:mod>)
+target_link_libraries(cdeps PUBLIC esmf PIO::PIO_Fortran)
+list(APPEND LIB_TARGETS cdeps)
+
+###############################################################################
+### Install
+###############################################################################
+
+install(
+  TARGETS   ${LIB_TARGETS}
+  EXPORT    CDEPSExports
+  LIBRARY   DESTINATION lib
+  ARCHIVE   DESTINATION lib
+  COMPONENT Library)
+
+export(EXPORT    CDEPSExports
+       NAMESPACE cdeps::
+       FILE      cdeps-targets.cmake)
+
+install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod DESTINATION ${CMAKE_INSTALL_PREFIX}/CDEPS)
+
+install(EXPORT      CDEPSExports
+        NAMESPACE   cdeps::
+        FILE        cdeps-targets.cmake
+        DESTINATION lib/cmake)
