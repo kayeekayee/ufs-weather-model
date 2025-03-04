@@ -1,7 +1,7 @@
 [submodule "FV3"]
   path = FV3
-  url = https://github.com/kayeekayee/fv3atm.git
-  branch = 2025Feb03_2c902a6
+  url = https://github.com/NOAA-GSL/fv3atm
+  branch = global-workflow
 [submodule "WW3"]
   path = WW3
   url = https://github.com/kayeekayee/ww3.git
@@ -16,7 +16,7 @@
   branch = develop
 [submodule "CMEPS"]
   path = CMEPS-interface/CMEPS
-  url = https://github.com/kayeekayee/CMEPS.git
+  url = https://github.com/NOAA-EMC/CMEPS
   branch = emc/develop
 [submodule "HYCOM"]
   path = HYCOM-interface/HYCOM
@@ -24,7 +24,7 @@
   branch = emc/develop
 [submodule "MOM6"]
   path = MOM6-interface/MOM6
-  url = https://github.com/kayeekayee/MOM6.git 
+  url = https://github.com/NOAA-EMC/MOM6
   branch = dev/emc
 [submodule "CICE"]
   path = CICE-interface/CICE
@@ -32,7 +32,7 @@
   branch = 2024Dec11_ff7fd7
 [submodule "CDEPS"]
   path = CDEPS-interface/CDEPS
-  url = https://github.com/kayeekayee/CDEPS.git
+  url = https://github.com/NOAA-EMC/CDEPS
   branch = develop
 [submodule "GOCART"]
   path = GOCART
@@ -44,7 +44,7 @@
   branch = develop
 [submodule "NOAHMP"]
   path = NOAHMP-interface/noahmp
-  url = https://github.com/kayeekayee/noahmp.git
+  url = https://github.com/NOAA-EMC/noahmp
   branch = develop
 [submodule "LM4-driver"]
   path = LM4-driver
